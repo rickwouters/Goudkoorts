@@ -1,0 +1,402 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="a184fb82-542a-417e-8b8f-c681b084836a" name="ClassDiagram" linkedPackageId="b28f2966-8312-4a59-8220-c26640cb1b4e" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="87af8600-3898-453b-9d9b-dd4269dfbd56">
+      <profileInstance Id="731c3284-1af7-4f9c-822b-feea62532869" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="4244e50e-bae8-491b-9177-d6bdbc1bb13d">
+      <profileInstance Id="0e9ca09e-0342-4f49-ba27-c9a9996ef0ab" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="9a69505f-0142-4dce-acab-cf5520e25bd7" name="BoardController" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="00a1b077-93f5-4766-9a45-ce2616c8a4fe" />
+        <targetEnds>
+          <association Id="031e4208-6977-4541-8d92-2083ca89f53c" isDerived="false" sourceEndRoleName="BoardController" targetEndRoleName="Track" isLeaf="false" isAbstract="false">
+            <classMoniker Id="8075f4cf-4f93-4b22-b47d-21d8edda54db" LastKnownName="TrackController" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8d22cdfb-37f7-4d42-b9fb-55c56978ccfb" name="BoardController" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="4a17ddac-8cc9-4efd-93f4-ea2d920fd636" name="Lower" value="*">
+                      <elementDefinition Id="538d6dc8-e175-4e08-8dbf-573b496d0ca8" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="6df2e9e4-4eca-4906-937d-184ed16ad36d" name="Upper" value="*">
+                      <elementDefinition Id="369847f2-d37f-4154-ba70-6c7b1041b028" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="93059ade-324e-478e-b451-5af6691639c6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3e01c1b2-edbb-4b44-a010-710183bbcaf3" name="Track" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="9ecd25c0-81f7-4cd9-bd75-a7e553a245da" name="Lower" value="*">
+                      <elementDefinition Id="707b49f1-2e74-4fe5-b120-3fa91c425bcd" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="e683bbd8-aa63-4634-8b17-47f4bff49cde" name="Upper" value="*">
+                      <elementDefinition Id="7cfb7647-5681-4b29-b6e4-fb3dcfccbf61" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="768a4a90-2b3c-4290-a62a-ed67d1389c87" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="b0bd951d-087a-47b4-9615-829bad68fbd9" />
+          </association>
+          <association Id="0f77299b-08a6-4d5e-ad23-34dfa6e77713" isDerived="false" sourceEndRoleName="BoardController" targetEndRoleName="Minecart" isLeaf="false" isAbstract="false">
+            <classMoniker Id="46f83f8e-e777-4bda-b5a9-bf8ec9f037af" LastKnownName="Minecart" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="19b040a5-1f55-42a2-98b2-5771908e3b73" name="BoardController" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="6e3e2f60-8141-4801-b3ec-598a302e94c9" name="Lower" value="*">
+                      <elementDefinition Id="b899302e-2dde-4a46-b82e-1e2ff6913817" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="b98770f6-de0c-4caf-a1cb-a6572d689887" name="Upper" value="*">
+                      <elementDefinition Id="962903a0-ba85-4a1b-ac64-398e47b8703b" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="b08900d4-015e-4fbd-b017-2266478467dd" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2092b081-9794-40f8-a293-64ba0583d6d7" name="Minecart" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="ea9f684e-c5f6-4691-8052-bf0fa5b32a7b" name="Lower" value="*">
+                      <elementDefinition Id="7b7c9a08-6414-43ab-915b-f1da68f64aa0" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="8fd2094b-e172-4ee9-9a0d-f0da1d7c55b8" name="Upper" value="*">
+                      <elementDefinition Id="aa2da22f-5d57-460e-b764-4b8edc0117e4" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="5eb73cf0-8ce4-45b7-9041-e90b2d1e0e7a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="0a38fc4c-2e8f-4522-9461-e421e4c4a7fb" />
+          </association>
+          <association Id="912b3d8b-e31d-4c61-b580-149beac81582" isDerived="false" sourceEndRoleName="BoardController" targetEndRoleName="Ship" isLeaf="false" isAbstract="false">
+            <classMoniker Id="71eb6350-808e-4a25-97f3-af2f6da3a0cc" LastKnownName="Ship" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="48943d61-7d76-4fef-aa19-edb8eeebb746" name="BoardController" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="f9bdbcd8-8576-4ab4-994e-c9dca6cc9c9a" name="Lower" value="*">
+                      <elementDefinition Id="4a049f17-6f6f-414b-8312-ab9870296850" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="e1ac6743-d763-442e-be22-1859214638d9" name="Upper" value="*">
+                      <elementDefinition Id="f96c55e7-ccbe-4dc2-b131-6990fee7b8cc" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="d778cc3e-c420-4007-a472-6e5333c3164a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c68e76c9-6c3b-4389-a2e0-ec37a8747251" name="Ship" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="9a08eef4-81bb-4b55-a61d-6cc76b1203e7" name="Lower" value="*">
+                      <elementDefinition Id="cd39132b-8c18-4b3a-92aa-3d4d5834f922" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="3ec704e4-4b6a-4608-be17-c1d2dea47d47" name="Upper" value="*">
+                      <elementDefinition Id="c36aed0c-b7f6-47da-a097-edac386bec64" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="71e1065b-8c8d-4921-b400-38efcca3ac5b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="702f8a9b-c74b-455c-a2b2-55cb535e3a49" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="ddbf3bc4-4984-4992-b8f5-32db340e1753" name="Board" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="2a308095-5e02-423a-98cc-00277ab13961" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="827d31c1-602e-470d-9501-f50bec413cbd" LastKnownName="HashMap" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="f8eefbe7-93c6-4254-a835-b4a3e7916535" name="GameController" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="1dad5516-007e-4d3f-b181-d24f41f2d50e" />
+        <targetEnds>
+          <association Id="43e219f4-6538-4757-b716-87b3786c8f01" isDerived="false" sourceEndRoleName="GameController" targetEndRoleName="GameView" isLeaf="false" isAbstract="false">
+            <classMoniker Id="50029756-9bef-44d7-bcad-ed90afa2a8ab" LastKnownName="GameView" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1b1b48dd-9a21-4abf-976a-ad0582617311" name="GameController" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="47bd8ce7-01b2-4e00-9fb8-0d7c592a4b4f" name="Lower" value="*">
+                      <elementDefinition Id="158bda1e-38f8-49e7-817d-e13754ee8a1a" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="019062a8-7e1a-420f-882f-771e4f5278f4" name="Upper" value="*">
+                      <elementDefinition Id="20839c6d-77d4-4a3a-a5a3-775b4ad3e6ed" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="f3af1f9a-0a22-4684-81d4-b4a73dc730da" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9c2ff359-887c-47cd-b7ab-858b5bf38f87" name="GameView" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="9086c2b9-5de2-4b00-83d9-fe70ad74eeb9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="2db79ad0-66e0-4e2b-bcba-8c7b5b8954f0" />
+          </association>
+          <association Id="af7a327b-205e-409c-a6e8-9f2aaa42e92a" isDerived="false" sourceEndRoleName="GameController" targetEndRoleName="GameModel" isLeaf="false" isAbstract="false">
+            <classMoniker Id="a3e7bd82-ceeb-42f7-a81f-a0e09c9faf29" LastKnownName="GameModel" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b821a3db-46c7-4ba7-962c-5f5189d36c8f" name="GameController" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="41fb6e5f-dfc9-44e2-8c62-0d0afdbc1615" name="Lower" value="*">
+                      <elementDefinition Id="13f05a90-6e1c-490b-a3a9-b8858735623c" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="b7bda859-25c0-44f2-90eb-7709db4245a3" name="Upper" value="*">
+                      <elementDefinition Id="f59528af-5e6e-439a-bc3e-4c90cd691b04" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="ec425b8f-fbdf-43f3-91bb-736515ecaffd" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7b3cc90c-62ef-42d3-bf0c-b333c34ac003" name="GameModel" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="0e13c2f6-9c11-4b57-acd9-009eeff7aa07" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="7abe90ca-6d96-4f73-8fe8-c9a023f8a0ae" />
+          </association>
+          <association Id="e88acc93-9605-47c8-9a86-63c5c1254c4a" isDerived="false" sourceEndRoleName="GameController" targetEndRoleName="BoardController" isLeaf="false" isAbstract="false">
+            <classMoniker Id="9a69505f-0142-4dce-acab-cf5520e25bd7" LastKnownName="BoardController" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c216054f-009b-4361-95bc-d1a664a7d4a1" name="GameController" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="000b7898-571b-4d95-a0f5-d190c1d7b6f1" name="Lower" value="*">
+                      <elementDefinition Id="6546b7f0-a66f-4b00-9a46-561d1b4c6ad4" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="684fe924-5d9a-466d-a10e-f3e47339b575" name="Upper" value="*">
+                      <elementDefinition Id="8bc92898-ed02-4d16-8a66-ee37db375cc3" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="65f07298-b414-4f7e-a266-23f60c848a55" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4524d6b1-d3ad-4516-8239-7e082fd31039" name="BoardController" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="243cd619-ae8f-4cef-9d9d-27a5de2e043f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="14bd2477-af8c-4694-988c-fb6eb7541866" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="50029756-9bef-44d7-bcad-ed90afa2a8ab" name="GameView" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="39e08dc2-eee7-45c0-a2c9-c3f366fdce21" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="a3e7bd82-ceeb-42f7-a81f-a0e09c9faf29" name="GameModel" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="a5503528-2658-434d-b844-1946adc9587d" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="aa589c90-9731-4126-ae18-7ed2b5dbe79f" name="BoardModel" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="7486d4c7-db3e-4363-8a19-a74272412fb8" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="8075f4cf-4f93-4b22-b47d-21d8edda54db" name="TrackController" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="0efabad6-bf24-4960-b713-1059d78096d6" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="abc442c7-c403-4896-ada6-0b37377723b2" name="HorizontalTrack" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="720b21cb-8acb-473a-8a7e-0765b298ab07" />
+        <generalsInternal>
+          <generalization Id="0a28f2d1-e0da-45dc-aa70-a38a7ac1dba9" isSubstitutable="false">
+            <classMoniker Id="8075f4cf-4f93-4b22-b47d-21d8edda54db" LastKnownName="TrackController" />
+            <elementDefinition Id="69bb8d88-1f8a-4f04-b906-e44d01d1031f" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="981e5398-d403-4de9-bcf9-dca21a8c0021" name="VerticalTrack" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="9388f496-c9f0-43ee-a18e-79e5c513fe62" />
+        <generalsInternal>
+          <generalization Id="11cbb90b-3dfb-412b-906d-b6dbd9856ef4" isSubstitutable="false">
+            <classMoniker Id="8075f4cf-4f93-4b22-b47d-21d8edda54db" LastKnownName="TrackController" />
+            <elementDefinition Id="1eb6c8f7-0ddb-44a8-9bee-b898ef74d0a5" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="27ecf0ff-dad2-415c-b569-a4eb26e9dac7" name="CurvedTrack" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="53fe561a-2710-49ab-bc65-36c58e31a391" />
+        <suppliersInternal>
+          <dependency Id="59f053f8-0918-4c56-aab2-fb357618ab5b">
+            <enumerationMoniker Id="beb5a893-e905-43b6-b280-a4d24d4f04e2" LastKnownName="Direction" />
+            <elementDefinition Id="f96481e1-7016-4b93-8edf-60a78d95c6ec" />
+          </dependency>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization Id="b3c679a0-01f9-4398-b34e-bf3ab8e8eef2" isSubstitutable="false">
+            <classMoniker Id="8075f4cf-4f93-4b22-b47d-21d8edda54db" LastKnownName="TrackController" />
+            <elementDefinition Id="ed4a9c34-7d1a-4c7a-9159-0ddd856c8375" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <enumeration Id="beb5a893-e905-43b6-b280-a4d24d4f04e2" name="Direction" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="dc7d9ddf-c347-4fd5-9fc6-30a1443389d6" />
+        <ownedLiterals>
+          <enumerationLiteral Id="3e3f970c-57e0-4576-b1c3-f90e86565e5e" name="LeftDown">
+            <elementDefinition Id="2ca4bd5f-4ca7-4180-8594-38899baf1999" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="1336a173-195d-424a-9fc1-72633c0b0a76" name="TopRight">
+            <elementDefinition Id="d494e9aa-8cc1-46d1-93c8-dfedf480dcbd" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="cee4de48-1838-405a-a3ea-f1493525acb6" name="LeftUp">
+            <elementDefinition Id="561fdd94-ebe4-43e0-87f3-0d8856bd774e" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="062e7448-75ef-47ce-b922-f4e2d922942f" name="DownRight">
+            <elementDefinition Id="b8a5b2cf-f0d3-4bee-9779-f709cab3d8ec" />
+          </enumerationLiteral>
+        </ownedLiterals>
+      </enumeration>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="827d31c1-602e-470d-9501-f50bec413cbd" name="HashMap" isAbstract="false" isLeaf="false" cachedFullName="HashMap">
+        <elementDefinition Id="b58fd943-384e-4ce2-b801-b35d4a466171" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="46f83f8e-e777-4bda-b5a9-bf8ec9f037af" name="Minecart" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="d3d4549d-ce66-48b2-8772-46b4d37a0ad9" />
+        <ownedAttributesInternal>
+          <property Id="0c513d10-79b6-44ae-8b55-ecf8c1b1f294" name="Location" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a285b0a6-3d93-45e7-b74a-7ac8ec8be8de" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="abf4aa9c-104c-47b0-914d-f94947e5cdae" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="4a6a6c70-d895-499b-bce3-3aac95ea1ed1" name="Filled" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="276e10a9-73ed-47a7-bfc6-e119aafdb9d2" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="31db133f-0010-4a97-be90-10ad461db589" LastKnownName="Boolean" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="abf4aa9c-104c-47b0-914d-f94947e5cdae" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="31db133f-0010-4a97-be90-10ad461db589" name="Boolean" isAbstract="false" isLeaf="false" cachedFullName="Boolean">
+        <elementDefinition Id="8943dc84-709e-4f62-b15a-a3273aa6f165" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="71eb6350-808e-4a25-97f3-af2f6da3a0cc" name="Ship" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="52f227fd-84cd-42fc-a407-feac046bad8e" />
+        <ownedAttributesInternal>
+          <property Id="831aec74-c9cd-4bcd-ba04-a079bd83d6b4" name="AmountGold" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="228a5b1f-8484-40a6-8ae2-b3cbb782dcb7" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="dcab1a56-58ad-4597-8b58-457fd5e63137" LastKnownName="int" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="dcab1a56-58ad-4597-8b58-457fd5e63137" name="int" isAbstract="false" isLeaf="false" cachedFullName="int">
+        <elementDefinition Id="3c25a2f8-1173-49df-82a2-0c498bef24eb" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="44f9cd78-82b8-441a-a894-ee605ee212af" name="Switch" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="12c135ba-79d4-4ffc-8277-8f9fc87f09d2" />
+        <suppliersInternal>
+          <dependency Id="b09e75ff-0fbe-4e7f-af23-38bccecad84f">
+            <enumerationMoniker Id="beb5a893-e905-43b6-b280-a4d24d4f04e2" LastKnownName="Direction" />
+            <elementDefinition Id="61ee560a-f02c-4579-9705-7abedb7ca238" />
+          </dependency>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization Id="b4e6a831-1d62-4e54-b9c8-77d24420896b" isSubstitutable="false">
+            <classMoniker Id="8075f4cf-4f93-4b22-b47d-21d8edda54db" LastKnownName="TrackController" />
+            <elementDefinition Id="3c226f6e-d5e5-4f31-85ec-1c0b737e199a" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property Id="f308461b-e737-4608-8594-738ace04ad99" name="StartingDirection" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e782a567-731b-4fe2-8c3f-2abf1e30b255" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="16335f8e-37c6-49e0-8a33-21e61d171437" LastKnownName="Direction" />
+            </type_NamedElement>
+          </property>
+          <property Id="1b7fe142-37d3-48be-a693-8dfe2d49d953" name="SecondaryDirection" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="5de6ed45-7a88-496c-ac22-311543002b84" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="16335f8e-37c6-49e0-8a33-21e61d171437" LastKnownName="Direction" />
+            </type_NamedElement>
+          </property>
+          <property Id="25458d17-7403-4b35-92df-d0dba253baf8" name="OnStartingDirection" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="8600f106-d3a9-47b3-b59b-80fd528aa040" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="31db133f-0010-4a97-be90-10ad461db589" LastKnownName="Boolean" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="16335f8e-37c6-49e0-8a33-21e61d171437" name="Direction" isAbstract="false" isLeaf="false" cachedFullName="Model::Direction">
+        <elementDefinition Id="dc7d9ddf-c347-4fd5-9fc6-30a1443389d6" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="b28f2966-8312-4a59-8220-c26640cb1b4e" name="Model">
+    <elementDefinition Id="e25ee270-b3aa-4bea-b4d5-46ae13593bc7" />
+  </package>
+</logicalClassDesignerModel>
