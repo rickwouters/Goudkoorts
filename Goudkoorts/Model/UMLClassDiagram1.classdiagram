@@ -1,19 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="a184fb82-542a-417e-8b8f-c681b084836a" name="ClassDiagram" linkedPackageId="b28f2966-8312-4a59-8220-c26640cb1b4e" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
-  <profileInstances>
-    <packageHasProfileInstances Id="87af8600-3898-453b-9d9b-dd4269dfbd56">
-      <profileInstance Id="731c3284-1af7-4f9c-822b-feea62532869" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="4244e50e-bae8-491b-9177-d6bdbc1bb13d">
-      <profileInstance Id="0e9ca09e-0342-4f49-ba27-c9a9996ef0ab" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <logicalClassDesignerModelHasTypes>
       <class Id="9a69505f-0142-4dce-acab-cf5520e25bd7" name="BoardController" isAbstract="false" isLeaf="false" isActiveClass="false">
@@ -135,7 +121,28 @@
               <referencedTypeMoniker Id="827d31c1-602e-470d-9501-f50bec413cbd" LastKnownName="HashMap" />
             </type_NamedElement>
           </property>
+          <property Id="74cd2788-819d-4a0a-abca-02bc7c8ba694" name="SpawnLocations" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="731fa8ed-6fd3-48bc-92f8-3dff4380c753" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="ed1aeaf7-bf61-41b6-85c8-815f6269db0c" LastKnownName="TrackController" />
+            </type_NamedElement>
+          </property>
         </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="88ab48bd-1686-4af5-aeb4-e0ff3fffa831" name="ShowBoard" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="4ff12a94-80df-4a8f-9a2c-8be59fca49e7" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="c0cbce49-974d-4417-9177-b4c7d4c83ade" direction="Return" isUnique="false">
+                  <elementDefinition Id="7b9cc39e-16c2-4659-91d5-aef8b625bd61" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="abf4aa9c-104c-47b0-914d-f94947e5cdae" LastKnownName="String" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
@@ -221,6 +228,25 @@
             <elementDefinition Id="14bd2477-af8c-4694-988c-fb6eb7541866" />
           </association>
         </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="20faf64d-f706-4097-a2c8-a69a272e5a9f" name="Turns" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="72e01333-5c1a-4aaf-b5c9-df5c1fc57829" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="dcab1a56-58ad-4597-8b58-457fd5e63137" LastKnownName="int" />
+            </type_NamedElement>
+          </property>
+          <property Id="b2d994a9-a005-4459-ab19-9d2e4629e0b9" name="Score" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f4afb6fc-8763-450f-bf7b-0f8f4f04e37c" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="dcab1a56-58ad-4597-8b58-457fd5e63137" LastKnownName="int" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="5c49c429-8a9b-4027-a529-1566867d273f" name="SimulateTurn" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="9637c604-b007-43a9-997d-9fcb89b8f242" />
+          </operation>
+        </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
@@ -241,6 +267,20 @@
     <logicalClassDesignerModelHasTypes>
       <class Id="8075f4cf-4f93-4b22-b47d-21d8edda54db" name="TrackController" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="0efabad6-bf24-4960-b713-1059d78096d6" />
+        <suppliersInternal>
+          <dependency Id="e0b4635e-f709-4648-a575-194eb82cd952">
+            <enumerationMoniker Id="beb5a893-e905-43b6-b280-a4d24d4f04e2" LastKnownName="Direction" />
+            <elementDefinition Id="0e37b58e-e37d-4389-9545-e0c4667ba307" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property Id="cf88be8a-260e-4e51-b3f2-b60dd748fc38" name="ContainsMinecart" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="1623755f-3fb3-420b-a07b-fceccd0f66c4" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="31db133f-0010-4a97-be90-10ad461db589" LastKnownName="Boolean" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
@@ -268,12 +308,6 @@
     <logicalClassDesignerModelHasTypes>
       <class Id="27ecf0ff-dad2-415c-b569-a4eb26e9dac7" name="CurvedTrack" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="53fe561a-2710-49ab-bc65-36c58e31a391" />
-        <suppliersInternal>
-          <dependency Id="59f053f8-0918-4c56-aab2-fb357618ab5b">
-            <enumerationMoniker Id="beb5a893-e905-43b6-b280-a4d24d4f04e2" LastKnownName="Direction" />
-            <elementDefinition Id="f96481e1-7016-4b93-8edf-60a78d95c6ec" />
-          </dependency>
-        </suppliersInternal>
         <generalsInternal>
           <generalization Id="b3c679a0-01f9-4398-b34e-bf3ab8e8eef2" isSubstitutable="false">
             <classMoniker Id="8075f4cf-4f93-4b22-b47d-21d8edda54db" LastKnownName="TrackController" />
@@ -297,6 +331,18 @@
           </enumerationLiteral>
           <enumerationLiteral Id="062e7448-75ef-47ce-b922-f4e2d922942f" name="DownRight">
             <elementDefinition Id="b8a5b2cf-f0d3-4bee-9779-f709cab3d8ec" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="fc8288d0-9836-4924-94a9-2cbfde9c4b52" name="Up">
+            <elementDefinition Id="450a5e83-e193-4395-b65d-782213450595" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="b96bff5d-9a8e-4839-ad4c-434952847f92" name="Down">
+            <elementDefinition Id="2b10ee0a-8d4a-45d2-afb1-bd6f922129db" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="f121f87a-48f8-4d24-b6fd-eb5c9d8e999d" name="Left">
+            <elementDefinition Id="b82c9d93-93f3-4f6d-ac75-2704fa349a64" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="030f8a0a-cee5-4f1d-83ac-7e684be23431" name="Right">
+            <elementDefinition Id="4341399f-806e-4002-bec5-529b1f99af82" />
           </enumerationLiteral>
         </ownedLiterals>
       </enumeration>
@@ -356,12 +402,6 @@
     <logicalClassDesignerModelHasTypes>
       <class Id="44f9cd78-82b8-441a-a894-ee605ee212af" name="Switch" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="12c135ba-79d4-4ffc-8277-8f9fc87f09d2" />
-        <suppliersInternal>
-          <dependency Id="b09e75ff-0fbe-4e7f-af23-38bccecad84f">
-            <enumerationMoniker Id="beb5a893-e905-43b6-b280-a4d24d4f04e2" LastKnownName="Direction" />
-            <elementDefinition Id="61ee560a-f02c-4579-9705-7abedb7ca238" />
-          </dependency>
-        </suppliersInternal>
         <generalsInternal>
           <generalization Id="b4e6a831-1d62-4e54-b9c8-77d24420896b" isSubstitutable="false">
             <classMoniker Id="8075f4cf-4f93-4b22-b47d-21d8edda54db" LastKnownName="TrackController" />
@@ -395,8 +435,38 @@
         <elementDefinition Id="dc7d9ddf-c347-4fd5-9fc6-30a1443389d6" />
       </referencedType>
     </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="253b9936-b76d-4e11-b2cf-615f52f1cee6" name="Yard" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="204fd5b4-5354-421b-9f1c-957a6883c5cf" />
+        <generalsInternal>
+          <generalization Id="f6acf1d8-9528-400f-a94d-7ecdb34b2659" isSubstitutable="false">
+            <classMoniker Id="8075f4cf-4f93-4b22-b47d-21d8edda54db" LastKnownName="TrackController" />
+            <elementDefinition Id="88f9f7cc-33ee-48cc-ba9a-3535e2b71a23" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="ed1aeaf7-bf61-41b6-85c8-815f6269db0c" name="TrackController" isAbstract="false" isLeaf="false" cachedFullName="Model::TrackController">
+        <elementDefinition Id="0efabad6-bf24-4960-b713-1059d78096d6" />
+      </referencedType>
+    </packageHasNamedElement>
   </packagedElements>
   <package Id="b28f2966-8312-4a59-8220-c26640cb1b4e" name="Model">
     <elementDefinition Id="e25ee270-b3aa-4bea-b4d5-46ae13593bc7" />
+    <profileInstances>
+      <packageHasProfileInstances Id="87af8600-3898-453b-9d9b-dd4269dfbd56">
+        <profileInstance Id="731c3284-1af7-4f9c-822b-feea62532869" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="4244e50e-bae8-491b-9177-d6bdbc1bb13d">
+        <profileInstance Id="0e9ca09e-0342-4f49-ba27-c9a9996ef0ab" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </logicalClassDesignerModel>
