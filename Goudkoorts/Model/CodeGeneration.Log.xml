@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="file:///C:/PROGRAM FILES (X86)/MICROSOFT VISUAL STUDIO 14.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/ARCHITECTURE TOOLS/EXTENSIBILITY/Logging/CodeGenLog.xslt"?>
+<Log xmlns="http://schemas.microsoft.com/VisualStudio/2010/CodeGen.RE.Log" Label="Code Generation/Text Transformation Log">
+  <MessageClass Name="Message" Label="Message" Option="Show informational messages" />
+  <MessageClass Name="Warning" Label="Warning" Option="Show warnings" />
+  <MessageClass Name="Error" Label="Error" Option="Show errors" />
+  <MessageClass Name="Property" Label="Property" Option="Show metadata" />
+  <MessageClass Name="Diagnostic" Label="Message" Option="Show diagnostic messages" />
+  <Message Timestamp="2016-10-27T20:49:50" Importance="High" Text="Code generation or text transformation started." />
+  <Message Timestamp="2016-10-27T20:49:52" Importance="Diagnostic" Text="Name = ClassTemplate" />
+  <Message Timestamp="2016-10-27T20:49:52" Importance="Diagnostic" Text="Overwrite = True" />
+  <Message Timestamp="2016-10-27T20:49:52" Importance="Diagnostic" Text="ProjectPath = ..\ModelLib\ModelLib.csproj" />
+  <Message Timestamp="2016-10-27T20:49:52" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2016-10-27T20:49:52" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2016-10-27T20:49:52" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4" />
+  <Message Timestamp="2016-10-27T20:49:52" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4" />
+  <Message Timestamp="2016-10-27T20:49:52" Importance="Medium" Text="Model's Text Template Binding: 'ClassTemplate' will apply ClassTemplate.t4 to: 'Model::Shiproute' -  (Class), 'Model::Ship' -  (Class), 'Model::GameModel' -  (Class), 'Model::BoardModel' -  (Class), 'Model::BoardController' -  (Class), 'Model::GameController' -  (Class), 'Model::GameView' -  (Class), 'Model::Yard' -  (Class), 'Model::Track' -  (Class), 'Model::Minecart' -  (Class), 'Model::InputView' -  (Class), 'Model::HorizontalTrack' -  (Class), 'Model::VerticalTrack' -  (Class), 'Model::CurvedTrack' -  (Class), 'Model::Switch' -  (Class) " />
+  <Message Timestamp="2016-10-27T20:51:39" Importance="Medium" Text="Project Added: \\tsclient\Rick\Desktop\AAA huiswerk\MODELLEREN\Sourcetree\Goudkoorts\ModelLib\ModelLib.csproj" />
+  <Message Timestamp="2016-10-27T20:51:43" Importance="Medium" Text="'Model::Shiproute' -  (Class) : success (file created) - \\tsclient\Rick\Desktop\AAA huiswerk\MODELLEREN\Sourcetree\Goudkoorts\ModelLib\GeneratedCode\Shiproute.cs" />
+  <Message Timestamp="2016-10-27T20:52:01" Importance="Medium" Text="'Model::Ship' -  (Class) : success (file created) - \\tsclient\Rick\Desktop\AAA huiswerk\MODELLEREN\Sourcetree\Goudkoorts\ModelLib\GeneratedCode\Ship.cs" />
+  <Message Timestamp="2016-10-27T20:52:22" Importance="Medium" Text="'Model::GameModel' -  (Class) : success (file created) - \\tsclient\Rick\Desktop\AAA huiswerk\MODELLEREN\Sourcetree\Goudkoorts\ModelLib\GeneratedCode\GameModel.cs" />
+  <Message Timestamp="2016-10-27T20:52:44" Importance="Medium" Text="'Model::BoardModel' -  (Class) : success (file created) - \\tsclient\Rick\Desktop\AAA huiswerk\MODELLEREN\Sourcetree\Goudkoorts\ModelLib\GeneratedCode\BoardModel.cs" />
+  <Message Timestamp="2016-10-27T20:53:05" Importance="Medium" Text="'Model::BoardController' -  (Class) : success (file created) - \\tsclient\Rick\Desktop\AAA huiswerk\MODELLEREN\Sourcetree\Goudkoorts\ModelLib\GeneratedCode\BoardController.cs" />
+  <Message Timestamp="2016-10-27T20:53:28" Importance="Medium" Text="'Model::GameController' -  (Class) : success (file created) - \\tsclient\Rick\Desktop\AAA huiswerk\MODELLEREN\Sourcetree\Goudkoorts\ModelLib\GeneratedCode\GameController.cs" />
+  <Message Timestamp="2016-10-27T20:53:48" Importance="Medium" Text="'Model::GameView' -  (Class) : success (file created) - \\tsclient\Rick\Desktop\AAA huiswerk\MODELLEREN\Sourcetree\Goudkoorts\ModelLib\GeneratedCode\GameView.cs" />
+  <Message Timestamp="2016-10-27T20:54:13" Importance="Medium" Text="'Model::Yard' -  (Class) : success (file created) - \\tsclient\Rick\Desktop\AAA huiswerk\MODELLEREN\Sourcetree\Goudkoorts\ModelLib\GeneratedCode\Yard.cs" />
+  <Message Timestamp="2016-10-27T20:54:36" Importance="Medium" Text="'Model::Track' -  (Class) : success (file created) - \\tsclient\Rick\Desktop\AAA huiswerk\MODELLEREN\Sourcetree\Goudkoorts\ModelLib\GeneratedCode\Track.cs" />
+  <Message Timestamp="2016-10-27T20:54:59" Importance="Medium" Text="'Model::Minecart' -  (Class) : success (file created) - \\tsclient\Rick\Desktop\AAA huiswerk\MODELLEREN\Sourcetree\Goudkoorts\ModelLib\GeneratedCode\Minecart.cs" />
+  <Message Timestamp="2016-10-27T20:55:21" Importance="Medium" Text="'Model::InputView' -  (Class) : success (file created) - \\tsclient\Rick\Desktop\AAA huiswerk\MODELLEREN\Sourcetree\Goudkoorts\ModelLib\GeneratedCode\InputView.cs" />
+  <Message Timestamp="2016-10-27T20:55:44" Importance="Medium" Text="'Model::HorizontalTrack' -  (Class) : success (file created) - \\tsclient\Rick\Desktop\AAA huiswerk\MODELLEREN\Sourcetree\Goudkoorts\ModelLib\GeneratedCode\HorizontalTrack.cs" />
+  <Message Timestamp="2016-10-27T20:56:07" Importance="Medium" Text="'Model::VerticalTrack' -  (Class) : success (file created) - \\tsclient\Rick\Desktop\AAA huiswerk\MODELLEREN\Sourcetree\Goudkoorts\ModelLib\GeneratedCode\VerticalTrack.cs" />
+  <Message Timestamp="2016-10-27T20:56:30" Importance="Medium" Text="'Model::CurvedTrack' -  (Class) : success (file created) - \\tsclient\Rick\Desktop\AAA huiswerk\MODELLEREN\Sourcetree\Goudkoorts\ModelLib\GeneratedCode\CurvedTrack.cs" />
+  <Message Timestamp="2016-10-27T20:56:58" Importance="Medium" Text="'Model::Switch' -  (Class) : success (file created) - \\tsclient\Rick\Desktop\AAA huiswerk\MODELLEREN\Sourcetree\Goudkoorts\ModelLib\GeneratedCode\Switch.cs" />
+  <Message Timestamp="2016-10-27T20:57:22" Importance="Diagnostic" Text="Name = EnumTemplate" />
+  <Message Timestamp="2016-10-27T20:57:22" Importance="Diagnostic" Text="Overwrite = True" />
+  <Message Timestamp="2016-10-27T20:57:22" Importance="Diagnostic" Text="ProjectPath = ..\ModelLib\ModelLib.csproj" />
+  <Message Timestamp="2016-10-27T20:57:22" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2016-10-27T20:57:22" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2016-10-27T20:57:22" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\EnumTemplate.t4" />
+  <Message Timestamp="2016-10-27T20:57:22" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\EnumTemplate.t4" />
+  <Message Timestamp="2016-10-27T20:57:22" Importance="Medium" Text="Model's Text Template Binding: 'EnumTemplate' will apply EnumTemplate.t4 to: 'Model::Direction' -  (Enumeration) " />
+  <Message Timestamp="2016-10-27T20:57:24" Importance="Medium" Text="'Model::Direction' -  (Enumeration) : success (file created) - \\tsclient\Rick\Desktop\AAA huiswerk\MODELLEREN\Sourcetree\Goudkoorts\ModelLib\GeneratedCode\Direction.cs" />
+  <Message Timestamp="2016-10-27T20:57:49" Importance="Diagnostic" Text="Name = StructTemplate" />
+  <Message Timestamp="2016-10-27T20:57:49" Importance="Diagnostic" Text="Overwrite = True" />
+  <Message Timestamp="2016-10-27T20:57:49" Importance="Diagnostic" Text="ProjectPath = ..\ModelLib\ModelLib.csproj" />
+  <Message Timestamp="2016-10-27T20:57:49" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2016-10-27T20:57:49" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2016-10-27T20:57:49" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
+  <Message Timestamp="2016-10-27T20:57:49" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
+  <Message Timestamp="2016-10-27T20:57:49" Importance="Medium" Text="Model's Text Template Binding: 'StructTemplate' will apply StructTemplate.t4 to: 'Model::Shiproute' -  (Class), 'Model::Ship' -  (Class), 'Model::GameModel' -  (Class), 'Model::BoardModel' -  (Class), 'Model::BoardController' -  (Class), 'Model::GameController' -  (Class), 'Model::GameView' -  (Class), 'Model::Yard' -  (Class), 'Model::Track' -  (Class), 'Model::Minecart' -  (Class), 'Model::InputView' -  (Class), 'Model::HorizontalTrack' -  (Class), 'Model::VerticalTrack' -  (Class), 'Model::CurvedTrack' -  (Class), 'Model::Switch' -  (Class) " />
+  <Message Timestamp="2016-10-27T20:57:51" Importance="Diagnostic" Text="'Model::Shiproute' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-10-27T20:57:52" Importance="Diagnostic" Text="'Model::Ship' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-10-27T20:57:53" Importance="Diagnostic" Text="'Model::GameModel' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-10-27T20:57:55" Importance="Diagnostic" Text="'Model::BoardModel' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-10-27T20:57:56" Importance="Diagnostic" Text="'Model::BoardController' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-10-27T20:57:56" Importance="Diagnostic" Text="'Model::GameController' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-10-27T20:57:57" Importance="Diagnostic" Text="'Model::GameView' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-10-27T20:57:59" Importance="Diagnostic" Text="'Model::Yard' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-10-27T20:58:00" Importance="Diagnostic" Text="'Model::Track' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-10-27T20:58:01" Importance="Diagnostic" Text="'Model::Minecart' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-10-27T20:58:02" Importance="Diagnostic" Text="'Model::InputView' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-10-27T20:58:03" Importance="Diagnostic" Text="'Model::HorizontalTrack' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-10-27T20:58:04" Importance="Diagnostic" Text="'Model::VerticalTrack' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-10-27T20:58:05" Importance="Diagnostic" Text="'Model::CurvedTrack' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-10-27T20:58:06" Importance="Diagnostic" Text="'Model::Switch' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-10-27T20:58:06" Importance="Diagnostic" Text="The selection included 15 elements which were not bound to a template." />
+  <Message Timestamp="2016-10-27T20:58:06" Importance="Diagnostic" Text="'Model::' -  (Association): no bound template." />
+  <Message Timestamp="2016-10-27T20:58:06" Importance="Diagnostic" Text="'Model::' -  (Association): no bound template." />
+  <Message Timestamp="2016-10-27T20:58:06" Importance="Diagnostic" Text="'Model::' -  (Association): no bound template." />
+  <Message Timestamp="2016-10-27T20:58:06" Importance="Diagnostic" Text="'Model::' -  (Association): no bound template." />
+  <Message Timestamp="2016-10-27T20:58:06" Importance="Diagnostic" Text="'Model::' -  (Association): no bound template." />
+  <Message Timestamp="2016-10-27T20:58:06" Importance="Diagnostic" Text="'Model::' -  (Association): no bound template." />
+  <Message Timestamp="2016-10-27T20:58:06" Importance="Diagnostic" Text="'88f9f7cc-33ee-48cc-ba9a-3535e2b71a23' -  (Generalization): no bound template." />
+  <Message Timestamp="2016-10-27T20:58:06" Importance="Diagnostic" Text="'Model::' -  (Association): no bound template." />
+  <Message Timestamp="2016-10-27T20:58:06" Importance="Diagnostic" Text="'Model::' -  (Association): no bound template." />
+  <Message Timestamp="2016-10-27T20:58:06" Importance="Diagnostic" Text="'Model::' -  (Association): no bound template." />
+  <Message Timestamp="2016-10-27T20:58:06" Importance="Diagnostic" Text="'Model::' -  (Association): no bound template." />
+  <Message Timestamp="2016-10-27T20:58:06" Importance="Diagnostic" Text="'69bb8d88-1f8a-4f04-b906-e44d01d1031f' -  (Generalization): no bound template." />
+  <Message Timestamp="2016-10-27T20:58:06" Importance="Diagnostic" Text="'1eb6c8f7-0ddb-44a8-9bee-b898ef74d0a5' -  (Generalization): no bound template." />
+  <Message Timestamp="2016-10-27T20:58:06" Importance="Diagnostic" Text="'ed4a9c34-7d1a-4c7a-9159-0ddd856c8375' -  (Generalization): no bound template." />
+  <Message Timestamp="2016-10-27T20:58:06" Importance="Diagnostic" Text="'3c226f6e-d5e5-4f31-85ec-1c0b737e199a' -  (Generalization): no bound template." />
+  <Message Timestamp="2016-10-27T20:58:06" Importance="High" Text="Code generation complete. Errors: 0. Warnings: 0." />
+</Log>

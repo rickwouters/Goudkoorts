@@ -1,3 +1,4 @@
 C:\Users\Rick\Desktop\AAA huiswerk\MODELLEREN\Goudkoorts\Goudkoorts\Goudkoorts\bin\Debug\Goudkoorts.exe.config
 \\tsclient\(VMFR)Goudkoorts\Goudkoorts\bin\Debug\Goudkoorts.exe.config
 \\tsclient\(VMFR)Goudkoorts (1)\Goudkoorts\bin\Debug\Goudkoorts.exe.config
+C:\Users\Rick\Desktop\AAA huiswerk\MODELLEREN\Sourcetree\Goudkoorts\Goudkoorts\bin\Debug\Goudkoorts.exe.config

@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Goudkoorts", "Goudkoorts\Goudkoorts.csproj", "{3F86D1D6-0F23-4ECB-9EDC-B0DA3E0E8276}"
+EndProject
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "Model", "\\tsclient\Rick\Desktop\AAA huiswerk\MODELLEREN\Sourcetree\Goudkoorts\Model\Model.modelproj", "{42DBE3D8-4FCD-4C65-992B-6A2681BC3B11}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModelLib", "\\tsclient\Rick\Desktop\AAA huiswerk\MODELLEREN\Sourcetree\Goudkoorts\ModelLib\ModelLib.csproj", "{22F92FDA-18D5-4581-97AE-4B6AF6C60F7F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{3F86D1D6-0F23-4ECB-9EDC-B0DA3E0E8276}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F86D1D6-0F23-4ECB-9EDC-B0DA3E0E8276}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F86D1D6-0F23-4ECB-9EDC-B0DA3E0E8276}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42DBE3D8-4FCD-4C65-992B-6A2681BC3B11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42DBE3D8-4FCD-4C65-992B-6A2681BC3B11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42DBE3D8-4FCD-4C65-992B-6A2681BC3B11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42DBE3D8-4FCD-4C65-992B-6A2681BC3B11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22F92FDA-18D5-4581-97AE-4B6AF6C60F7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22F92FDA-18D5-4581-97AE-4B6AF6C60F7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22F92FDA-18D5-4581-97AE-4B6AF6C60F7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22F92FDA-18D5-4581-97AE-4B6AF6C60F7F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
