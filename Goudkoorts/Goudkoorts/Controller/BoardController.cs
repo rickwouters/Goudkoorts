@@ -11,7 +11,13 @@ using System.Text;
 
 public class BoardController
 {
-	public virtual Track SpawnLocations
+
+
+    private Dictionary<String, Track> board;
+    private int _width;
+    private int _height;
+
+    public virtual Track SpawnLocations
 	{
 		get;
 		set;
@@ -36,15 +42,66 @@ public class BoardController
 	}
 
 	public virtual BoardModel BoardModel
-	{
-		get;
-		set;
-	}
+    {
+        get;
+        set;
+    }
 
 	public virtual string ShowBoard()
 	{
-		throw new System.NotImplementedException();
-	}
+        String expBoard = "";
+
+        for (int x = 0; x < _width; x++)
+        {
+
+            for (int y = 0; y < _height; y++)
+            {
+
+                expBoard += board[x + "-" + y].getChar();
+
+            }
+            expBoard += Environment.NewLine;
+
+        }
+
+        return expBoard;
+    }
+
+    //weet niet zeker of dit public of private moet worden
+    public void generateBoard(int Width, int Height)
+    {
+        board = new Dictionary<string, global::Track>();
+
+        _height = Height;
+        _width = Width;
+
+        for (int x = 0; x < _width; x++)
+        {
+
+            for (int y = 0; y < _height; y++)
+            {
+
+                board.Add(x + "-" + y, new Track());
+
+
+            }
+
+        }
+
+    }
+
+    public void buildBoard()
+    {
+
+        // dit moet handmatig, hieronder staat een vvorbeeld voor hoe het moet
+
+        board["0-0"] = new HorizontalTrack();
+        board["1-0"] = new HorizontalTrack();
+        board["0-1"] = new VerticalTrack();
+        board["1-1"] = new Yard();
+
+
+    }
 
 }
 

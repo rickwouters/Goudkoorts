@@ -11,5 +11,11 @@ using System.Text;
 
 public class GameView
 {
+
+    public void showBoard(String board)
+    {
+        Console.WriteLine(board);
+    }
+
 }
 

@@ -11,6 +11,10 @@ using System.Text;
 
 public class GameController
 {
+
+    public BoardController boardController;
+    public GameView gameView;
+
 	public virtual int Turns
 	{
 		get;
@@ -51,6 +55,20 @@ public class GameController
 	{
 		throw new System.NotImplementedException();
 	}
+
+
+    public GameController()
+    {
+
+        boardController = new BoardController();
+        gameView = new GameView();
+
+        boardController.generateBoard(40, 40);
+
+        gameView.showBoard(boardController.ShowBoard());
+
+    }
+
 
 }
 

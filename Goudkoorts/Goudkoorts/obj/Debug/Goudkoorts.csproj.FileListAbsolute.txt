@@ -2,3 +2,8 @@ C:\Users\Rick\Desktop\AAA huiswerk\MODELLEREN\Goudkoorts\Goudkoorts\Goudkoorts\b
 \\tsclient\(VMFR)Goudkoorts\Goudkoorts\bin\Debug\Goudkoorts.exe.config
 \\tsclient\(VMFR)Goudkoorts (1)\Goudkoorts\bin\Debug\Goudkoorts.exe.config
 C:\Users\Rick\Desktop\AAA huiswerk\MODELLEREN\Sourcetree\Goudkoorts\Goudkoorts\bin\Debug\Goudkoorts.exe.config
+C:\Users\Rick\Desktop\AAA huiswerk\MODELLEREN\Sourcetree\Goudkoorts\Goudkoorts\bin\Debug\Goudkoorts.exe
+C:\Users\Rick\Desktop\AAA huiswerk\MODELLEREN\Sourcetree\Goudkoorts\Goudkoorts\bin\Debug\Goudkoorts.pdb
+C:\Users\Rick\Desktop\AAA huiswerk\MODELLEREN\Sourcetree\Goudkoorts\Goudkoorts\obj\Debug\Goudkoorts.csprojResolveAssemblyReference.cache
+C:\Users\Rick\Desktop\AAA huiswerk\MODELLEREN\Sourcetree\Goudkoorts\Goudkoorts\obj\Debug\Goudkoorts.exe
+C:\Users\Rick\Desktop\AAA huiswerk\MODELLEREN\Sourcetree\Goudkoorts\Goudkoorts\obj\Debug\Goudkoorts.pdb

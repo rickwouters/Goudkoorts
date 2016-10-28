@@ -23,5 +23,10 @@ public class Track
 		set;
 	}
 
+    public char getChar()
+    {
+        return '-';
+    }
+
 }
 
