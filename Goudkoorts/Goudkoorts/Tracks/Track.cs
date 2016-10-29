@@ -4,13 +4,14 @@
 //     Changes to this file will be lost if the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
+using Goudkoorts.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
 // Deze class moet abstract worden
-public abstract class Track
+public abstract class Track : Block
 {
     public Track()
     {
