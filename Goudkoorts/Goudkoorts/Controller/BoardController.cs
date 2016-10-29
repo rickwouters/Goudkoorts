@@ -111,6 +111,7 @@ public class BoardController
             }
 
         }
+		buildBoard();
 
     }
 
@@ -120,7 +121,7 @@ public class BoardController
         // dit moet handmatig, hieronder staat een vvorbeeld voor hoe het moet
 
         board["0-0"] = new Rail();
-        board["1-1"] = new Yard();
+        board["1-1"] = new Rail();
 
 
     }

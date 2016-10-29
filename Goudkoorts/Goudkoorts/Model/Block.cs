@@ -14,9 +14,9 @@ namespace Goudkoorts.Model
 			set;
 		}
 
-		public char getChar()
+		public virtual char getChar()
 		{
-			return 'a';
+			return 'b';
 		}
 
 	}

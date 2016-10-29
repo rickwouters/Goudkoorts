@@ -10,7 +10,7 @@ namespace Goudkoorts.Tracks
 	class EmptyBlock : Block
 	{
 
-		public new char getChar()
+		public override char getChar()
 		{
 			return ' ';
 		}
