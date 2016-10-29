@@ -94,7 +94,7 @@ public class BoardController
         for(int i = 0; i < _width; i++)
         {
 
-            currentBlock = firstBlockWater.NextBlock = new Water();
+            currentBlock = currentBlock.NextBlock = new Water();
 
         }
 

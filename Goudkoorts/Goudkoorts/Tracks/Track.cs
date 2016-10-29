@@ -30,7 +30,7 @@ public abstract class Track : Block
 		set;
 	}
 
-    public virtual char getChar()
+    public override char getChar()
     {
         return '-';
     }
