@@ -8,7 +8,7 @@ namespace Goudkoorts.Model
 {
 	public abstract class Block
 	{
-		public Block NextBlock
+		public virtual Block NextBlock
 		{
 			get;
 			set;

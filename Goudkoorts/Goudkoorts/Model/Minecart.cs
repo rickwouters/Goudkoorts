@@ -23,9 +23,19 @@ public class Minecart
 		set;
 	}
 
-	public virtual void Move()
+	public Minecart(Track location)
 	{
-		throw new System.NotImplementedException();
+
+		Location = location;
+		Location.ContainsMinecart = true;
+
+	}
+
+	public virtual Boolean Move()
+	{
+		Boolean b = Location.moveCart();
+		Location = Location.NextTrack;
+		return b;
 	}
 
 }

@@ -56,6 +56,8 @@ public class BoardController
 		set;
 	}
 
+	private List<Minecart> carts;
+
 	public virtual string ShowBoard()
 	{
         String expBoard = "";
@@ -117,8 +119,10 @@ public class BoardController
             }
 
         }
-		buildBoard();
+		
 
+		carts = new List<global::Minecart>();
+		buildBoard();
     }
 
     public void buildBoard()
@@ -128,32 +132,25 @@ public class BoardController
 
         board["0-0"] = new Rail();
         board["1-1"] = new Rail();
-		board["0-2"] = new Rail { ContainsMinecart = true };
+		board["0-2"] = new Rail();
 
 		board["0-1"] = new Switch((Track)board["1-1"], null, (Track)board["0-0"], (Track)board["0-2"]);
 
-		lastTrack = (Track)board["1-1"];
+		board["0-0"].NextBlock = board["0-1"];
+		board["0-2"].NextBlock = board["1-1"];
 
+		carts.Add(new Minecart((Track)board["0-2"]));
     }
 
 	public Boolean simulateTurn()
 	{
 
-		Track currentTrack = lastTrack;
+		foreach(Minecart e in carts){
 
-		while(currentTrack.PreviousTrack != null)
-		{
-
-			if (currentTrack.ContainsMinecart)
+			if (!e.Move())
 			{
-				if (!currentTrack.moveCart())
-				{
-					return false;
-				}
-
+				return false;
 			}
-
-			currentTrack = currentTrack.PreviousTrack;
 
 		}
 

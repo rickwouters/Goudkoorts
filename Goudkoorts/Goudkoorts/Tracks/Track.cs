@@ -28,6 +28,7 @@ public abstract class Track : Block
 	{
 		get;
 		set;
+
 	}
 
 	public virtual Track PreviousTrack
@@ -40,6 +41,20 @@ public abstract class Track : Block
     {
         return 't';
     }
+
+	public override Block NextBlock
+	{
+		get
+		{
+			return NextTrack;
+		}
+
+		set
+		{
+			NextTrack = (Track)value;
+		}
+
+	}
 
 	public virtual Boolean moveCart()
 	{
