@@ -125,7 +125,24 @@ public class BoardController
 		buildBoard();
     }
 
-    public void buildBoard()
+	public void buildBoard()
+	{
+
+		board["0-0"] = new Rail();
+		board["0-1"] = new Rail();
+		board["0-2"] = new Rail();
+		board["0-3"] = new Rail();
+
+		board["0-0"].NextBlock = board["0-1"];
+		board["0-1"].NextBlock = board["0-2"];
+		board["0-2"].NextBlock = board["0-3"];
+
+		carts.Add(new Minecart((Track)board["0-1"]));
+
+
+	}
+
+    public void buildBoard1()
     {
 
         // dit moet handmatig, hieronder staat een vvorbeeld voor hoe het moet
@@ -135,9 +152,6 @@ public class BoardController
 		board["0-2"] = new Rail();
 
 		board["0-1"] = new Switch((Track)board["1-1"], null, (Track)board["0-0"], (Track)board["0-2"]);
-
-		board["0-0"].NextBlock = board["0-1"];
-		board["0-2"].NextBlock = board["1-1"];
 
 		carts.Add(new Minecart((Track)board["0-2"]));
     }
