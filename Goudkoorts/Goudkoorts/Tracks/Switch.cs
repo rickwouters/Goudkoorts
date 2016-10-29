@@ -98,7 +98,12 @@ public class Switch : Track
 
 	public override char getChar()
 	{
-		
+
+		if (ContainsMinecart)
+		{
+			return '0';
+		}
+
 		if(SecondaryPrevious == PreviousTrack || PrimaryNext == NextTrack)
 		{
 			return '/';

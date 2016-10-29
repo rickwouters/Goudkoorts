@@ -64,7 +64,18 @@ public class GameController
 
         gameView.showBoard(boardController.ShowBoard());
 
-		boardController.simulateTurn();
+		if (!boardController.simulateTurn())
+		{
+			if (gameView.GameOver())
+			{
+				restart();
+			}
+			else
+			{
+				Environment.Exit(0);
+			}
+
+		}
 
 		gameView.showBoard(boardController.ShowBoard());
 	}
@@ -76,7 +87,11 @@ public class GameController
 
 
     
-
+	private void restart()
+	{
+		gameView = new GameView();
+		boardController = new BoardController();
+	}
 
 }
 

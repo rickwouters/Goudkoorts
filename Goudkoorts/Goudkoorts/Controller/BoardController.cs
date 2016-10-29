@@ -122,7 +122,7 @@ public class BoardController
 		
 
 		carts = new List<global::Minecart>();
-		buildBoard();
+		buildBoard1();
     }
 
 	public void buildBoard()
