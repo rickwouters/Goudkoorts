@@ -10,6 +10,7 @@ namespace Goudkoorts
 	{
 		static void Main(string[] args)
 		{
+            new GameController().play();
 		}
 	}
 }

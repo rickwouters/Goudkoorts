@@ -11,5 +11,21 @@ using System.Text;
 
 public class GameView
 {
+    public void printHeader()
+    {
+        Console.WriteLine("           ███████   ███████  ██     ██ ████████");
+        Console.WriteLine("          ██        ██     ██ ██     ██ ██     ██");
+        Console.WriteLine("          ██    ███ ██     ██ ██     ██ ██     ██");
+        Console.WriteLine("          ██     ██ ██     ██ ██     ██ ██     ██");
+        Console.WriteLine("           ███████   ███████   ███████  ████████");
+        Console.WriteLine("");
+        Console.WriteLine("██    ██   ███████   ███████  ████████  █████████  ███████");
+        Console.WriteLine("██   ██   ██     ██ ██     ██ ██     ██    ███    ████");
+        Console.WriteLine("██████    ██     ██ ██     ██ ████████     ███     ███████");
+        Console.WriteLine("██   ██   ██     ██ ██     ██ ██     ██    ███          ███");
+        Console.WriteLine("██    ███  ███████   ███████  ██     ██    ███     ███████");
+        Console.WriteLine("-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-");
+        Console.ReadKey();
+    }
 }
 

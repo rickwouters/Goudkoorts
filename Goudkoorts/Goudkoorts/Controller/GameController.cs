@@ -11,6 +11,14 @@ using System.Text;
 
 public class GameController
 {
+    public GameController()
+    {
+        GameView = new GameView();
+        GameModel = new GameModel();
+        BoardController = new BoardController();
+        InputView = new InputView();
+    }
+
 	public virtual int Turns
 	{
 		get;
@@ -46,6 +54,11 @@ public class GameController
 		get;
 		set;
 	}
+
+    public void play()
+    {
+        GameView.printHeader();
+    }
 
 	public virtual void SimulateTurn()
 	{
