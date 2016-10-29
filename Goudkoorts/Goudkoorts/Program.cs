@@ -10,10 +10,8 @@ namespace Goudkoorts
 	{
 		static void Main(string[] args)
 		{
-
-            new GameController();
+            new GameController().play();
             Console.ReadLine();
-
 		}
 	}
 }

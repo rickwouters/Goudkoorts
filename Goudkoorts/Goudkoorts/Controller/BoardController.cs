@@ -61,9 +61,7 @@ public class BoardController
 
             }
             expBoard += Environment.NewLine;
-
         }
-
         return expBoard;
     }
 

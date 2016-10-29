@@ -15,6 +15,12 @@ public class GameController
     public BoardController boardController;
     public GameView gameView;
 
+    public GameController()
+    {
+        boardController = new BoardController();
+        gameView = new GameView();
+    }
+
 	public virtual int Turns
 	{
 		get;
@@ -51,23 +57,21 @@ public class GameController
 		set;
 	}
 
-	public virtual void SimulateTurn()
+    public void play()
+    {
+        gameView.showWelcome();
+        boardController.generateBoard(40, 40);
+
+        gameView.showBoard(boardController.ShowBoard());
+    }
+
+	public void SimulateTurn()
 	{
 		throw new System.NotImplementedException();
 	}
 
 
-    public GameController()
-    {
-
-        boardController = new BoardController();
-        gameView = new GameView();
-
-        boardController.generateBoard(40, 40);
-
-        gameView.showBoard(boardController.ShowBoard());
-
-    }
+    
 
 
 }

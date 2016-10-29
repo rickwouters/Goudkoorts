@@ -11,6 +11,16 @@ using System.Text;
 
 public class GameView
 {
+    public void showWelcome()
+    {
+        Console.WriteLine(" ███████   ███████  ██     ██ ████████  ██    ██   ███████   ███████  ████████  █████████  ███████");
+        Console.WriteLine("██        ██     ██ ██     ██ ██     ██ ██   ██   ██     ██ ██     ██ ██     ██    ███    ████");
+        Console.WriteLine("██    ███ ██     ██ ██     ██ ██     ██ ██████    ██     ██ ██     ██ ████████     ███     ███████");
+        Console.WriteLine("██     ██ ██     ██ ██     ██ ██     ██ ██   ██   ██     ██ ██     ██ ██     ██    ███          ███");
+        Console.WriteLine(" ███████   ███████   ███████  ████████  ██    ███  ███████   ███████  ██     ██    ███     ███████");
+        Console.WriteLine("-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=");
+        Console.WriteLine("");
+    }
 
     public void showBoard(String board)
     {
