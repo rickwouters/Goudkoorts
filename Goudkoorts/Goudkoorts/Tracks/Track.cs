@@ -9,8 +9,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+// Deze class moet abstract worden
 public class Track
 {
+    public Track()
+    {
+        ContainsMinecart = false;
+    }
+
 	public virtual bool ContainsMinecart
 	{
 		get;

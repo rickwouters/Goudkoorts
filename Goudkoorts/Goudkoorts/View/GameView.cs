@@ -13,13 +13,38 @@ public class GameView
 {
     public void showWelcome()
     {
-        Console.WriteLine(" ███████   ███████  ██     ██ ████████  ██    ██   ███████   ███████  ████████  █████████  ███████");
-        Console.WriteLine("██        ██     ██ ██     ██ ██     ██ ██   ██   ██     ██ ██     ██ ██     ██    ███    ████");
-        Console.WriteLine("██    ███ ██     ██ ██     ██ ██     ██ ██████    ██     ██ ██     ██ ████████     ███     ███████");
-        Console.WriteLine("██     ██ ██     ██ ██     ██ ██     ██ ██   ██   ██     ██ ██     ██ ██     ██    ███          ███");
-        Console.WriteLine(" ███████   ███████   ███████  ████████  ██    ███  ███████   ███████  ██     ██    ███     ███████");
-        Console.WriteLine("-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=");
+        Console.WriteLine("           ███████   ███████  ██     ██ ████████");
+        Console.WriteLine("          ██        ██     ██ ██     ██ ██     ██");
+        Console.WriteLine("          ██    ███ ██     ██ ██     ██ ██     ██");
+        Console.WriteLine("          ██     ██ ██     ██ ██     ██ ██     ██");
+        Console.WriteLine("           ███████   ███████   ███████  ████████");
         Console.WriteLine("");
+        Console.WriteLine("██    ██   ███████   ███████  ████████  █████████  ███████");
+        Console.WriteLine("██   ██   ██     ██ ██     ██ ██     ██    ███    ████");
+        Console.WriteLine("██████    ██     ██ ██     ██ ████████     ███     ███████");
+        Console.WriteLine("██   ██   ██     ██ ██     ██ ██     ██    ███          ███");
+        Console.WriteLine("██    ███  ███████   ███████  ██     ██    ███     ███████");
+        Console.WriteLine("-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-");
+        Console.WriteLine("███████████████████████ W E L K O M ███████████████████████");
+        Console.WriteLine("█████                                                 █████");
+        Console.WriteLine("█████ Welkom bij goudkoorts! Het doel van dit spel    █████");
+        Console.WriteLine("█████ is om zo veel mogelijk mijnkarretjes met goud   █████");
+        Console.WriteLine("█████ naar de boot te brengen. Jij moet de wissels    █████");
+        Console.WriteLine("█████ omzetten zodat de karretjes niet botsen, maar   █████");
+        Console.WriteLine("█████ kijk uit! De karretjes komen steeds sneller!    █████");
+        Console.WriteLine("█████                                                 █████");
+        Console.WriteLine("█████ Gebruik de toetsen 1-5 om de wissels om te      █████");
+        Console.WriteLine("█████ zetten.                                         █████");
+        Console.WriteLine("█████                                                 █████");
+        Console.WriteLine("██████████████████████ L E G E N D A ██████████████████████");
+        Console.WriteLine("█████                                                 █████");
+        Console.WriteLine("█████    0   - Vol karretje      o   - Leeg karretje  █████");
+        Console.WriteLine("█████    -   - Rails             =   - Rangeervak     █████");
+        Console.WriteLine("█████    /   - Wissel noord      \\   - Wissel zuid    █████");
+        Console.WriteLine("█████    ~   - Water             +   - Kade           █████");
+        Console.WriteLine("█████    <0> - Volle boot        <o> - Lege boot      █████");
+        Console.WriteLine("█████                                                 █████");
+        Console.WriteLine("███████████████████████████████████████████████████████████");
     }
 
     public void showBoard(String board)
