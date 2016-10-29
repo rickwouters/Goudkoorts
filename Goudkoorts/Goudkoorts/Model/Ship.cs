@@ -17,12 +17,6 @@ public class Ship
 		set;
 	}
 
-	public virtual Shiproute Shiproute
-	{
-		get;
-		set;
-	}
-
 	public virtual void Move()
 	{
 		throw new System.NotImplementedException();

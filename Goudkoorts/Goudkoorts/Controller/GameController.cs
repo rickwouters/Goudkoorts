@@ -60,7 +60,7 @@ public class GameController
     public void play()
     {
         gameView.showWelcome();
-        boardController.generateBoard(40, 40);
+        boardController.generateBoard(10, 5);
 
         gameView.showBoard(boardController.ShowBoard());
     }

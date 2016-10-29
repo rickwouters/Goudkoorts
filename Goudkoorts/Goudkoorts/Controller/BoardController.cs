@@ -64,7 +64,7 @@ public class BoardController
 			currentBlock = currentBlock.NextBlock;
 
 		}
-
+		expBoard += Environment.NewLine;
 
         for (int x = 0; x < _width; x++)
         {
