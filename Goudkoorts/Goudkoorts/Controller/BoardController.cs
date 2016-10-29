@@ -57,6 +57,7 @@ public class BoardController
 	}
 
 	private List<Minecart> carts;
+	private List<Switch> switches;
 
 	public virtual string ShowBoard()
 	{
@@ -119,8 +120,8 @@ public class BoardController
             }
 
         }
-		
 
+		switches = new List<Switch>();
 		carts = new List<global::Minecart>();
 		buildBoard1();
     }
@@ -151,7 +152,11 @@ public class BoardController
         board["1-1"] = new Rail();
 		board["0-2"] = new Rail();
 
-		board["0-1"] = new Switch((Track)board["1-1"], null, (Track)board["0-0"], (Track)board["0-2"]);
+		switches.Add(new Switch((Track)board["1-1"], null, (Track)board["0-0"], (Track)board["0-2"]));
+
+		board["0-1"] = switches[0];
+
+
 
 		carts.Add(new Minecart((Track)board["0-2"]));
     }
@@ -172,11 +177,9 @@ public class BoardController
 
 	}
 
-	public void turnSwitch()
+	public void turnSwitch(int index)
 	{
-		//for now test object
-		Switch tempSwitch = (Switch)board["0-1"];
-		tempSwitch.changeDirection();
+		switches[index].changeDirection();
 	}
 
 }
