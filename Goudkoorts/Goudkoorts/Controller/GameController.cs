@@ -63,7 +63,11 @@ public class GameController
         boardController.generateBoard(10, 5);
 
         gameView.showBoard(boardController.ShowBoard());
-    }
+
+		boardController.turnSwitch();
+
+		gameView.showBoard(boardController.ShowBoard());
+	}
 
 	public void SimulateTurn()
 	{

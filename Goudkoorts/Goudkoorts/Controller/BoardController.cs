@@ -65,12 +65,12 @@ public class BoardController
 
 		}
 		expBoard += Environment.NewLine;
-
-        for (int x = 0; x < _width; x++)
+		for (int y = 0; y < _height; y++)
+			
         {
 
-            for (int y = 0; y < _height; y++)
-            {
+			for (int x = 0; x < _width; x++)
+			{
 
                 expBoard += board[x + "-" + y].getChar();
 
@@ -122,9 +122,18 @@ public class BoardController
 
         board["0-0"] = new Rail();
         board["1-1"] = new Rail();
+		board["0-2"] = new Rail();
 
+		board["0-1"] = new Switch((Track)board["1-1"], null, (Track)board["0-0"], (Track)board["0-2"]);
 
     }
+
+	public void turnSwitch()
+	{
+		//for now test object
+		Switch tempSwitch = (Switch)board["0-1"];
+		tempSwitch.changeDirection();
+	}
 
 }
 
