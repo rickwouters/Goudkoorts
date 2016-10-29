@@ -4,6 +4,8 @@
 //     Changes to this file will be lost if the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
+using Goudkoorts.Model;
+using Goudkoorts.Tracks;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,6 +18,7 @@ public class BoardController
     private Dictionary<String, Track> board;
     private int _width;
     private int _height;
+    private Water firstBlockWater;
 
     public virtual Track SpawnLocations
 	{
@@ -51,6 +54,9 @@ public class BoardController
 	{
         String expBoard = "";
 
+        
+
+
         for (int x = 0; x < _width; x++)
         {
 
@@ -73,6 +79,17 @@ public class BoardController
         _height = Height;
         _width = Width;
 
+        firstBlockWater = new Water();
+        Water currentBlock = firstBlockWater;
+
+        for(int i = 0; i < _width; i++)
+        {
+
+            currentBlock = firstBlockWater.next = new Water();
+
+        }
+
+
         for (int x = 0; x < _width; x++)
         {
 
@@ -93,9 +110,7 @@ public class BoardController
 
         // dit moet handmatig, hieronder staat een vvorbeeld voor hoe het moet
 
-        board["0-0"] = new HorizontalTrack();
-        board["1-0"] = new HorizontalTrack();
-        board["0-1"] = new VerticalTrack();
+        board["0-0"] = new Rail();
         board["1-1"] = new Yard();
 
 

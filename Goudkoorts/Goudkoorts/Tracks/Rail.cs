@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Goudkoorts.Tracks
 {
-    class Silo : Track
+    class Rail : Track
     {
     }
 }

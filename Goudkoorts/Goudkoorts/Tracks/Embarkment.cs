@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Goudkoorts.Tracks
 {
-    class Embarkment
+    class Embarkment : Track
     {
     }
 }

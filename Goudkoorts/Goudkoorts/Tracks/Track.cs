@@ -10,7 +10,7 @@ using System.Linq;
 using System.Text;
 
 // Deze class moet abstract worden
-public class Track
+public abstract class Track
 {
     public Track()
     {

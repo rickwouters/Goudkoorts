@@ -8,5 +8,17 @@ namespace Goudkoorts.Model
 {
     class Water
     {
+
+        private char output = '~';
+
+        public Water next { get; set; }
+
+        public char Print()
+        {
+
+            return output;
+
+        }
+
     }
 }

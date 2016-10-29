@@ -40,7 +40,7 @@ public class GameView
         Console.WriteLine("█████                                                 █████");
         Console.WriteLine("█████    0   - Vol karretje      o   - Leeg karretje  █████");
         Console.WriteLine("█████    -   - Rails             =   - Rangeervak     █████");
-        Console.WriteLine("█████    /   - Wissel noord      \\   - Wissel zuid    █████");
+        Console.WriteLine("█████    /   - Wissel noord      \\   - Wissel zuid   █████");
         Console.WriteLine("█████    ~   - Water             +   - Kade           █████");
         Console.WriteLine("█████    <0> - Volle boot        <o> - Lege boot      █████");
         Console.WriteLine("█████                                                 █████");
