@@ -6,18 +6,17 @@ using System.Threading.Tasks;
 
 namespace Goudkoorts.Model
 {
-    class Water : Block
-    {
-
-        private char output = '~';
-
-		public new Water NextBlock { get; set; }
-
-		public new char getChar()
+	public abstract class Block
+	{
+		public Block NextBlock
 		{
+			get;
+			set;
+		}
 
-			return output;
-
+		public char getChar()
+		{
+			return 'a';
 		}
 
 	}

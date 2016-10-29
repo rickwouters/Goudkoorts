@@ -42,11 +42,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controller\BoardController.cs" />
+    <Compile Include="Model\Block.cs" />
     <Compile Include="Model\BoardModel.cs" />
     <Compile Include="Model\Water.cs" />
     <Compile Include="Controller\GameController.cs" />
     <Compile Include="Model\GameModel.cs" />
     <Compile Include="Tracks\Embarkment.cs" />
+    <Compile Include="Model\EmptyBlock.cs" />
     <Compile Include="Tracks\Rail.cs" />
     <Compile Include="Tracks\Silo.cs" />
     <Compile Include="View\GameView.cs" />

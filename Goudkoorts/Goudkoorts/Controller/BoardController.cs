@@ -15,7 +15,7 @@ public class BoardController
 {
 
 
-    private Dictionary<String, Track> board;
+    private Dictionary<String, Block> board;
     private int _width;
     private int _height;
     private Water firstBlockWater;
@@ -54,7 +54,16 @@ public class BoardController
 	{
         String expBoard = "";
 
-        
+		Water currentBlock = firstBlockWater;
+
+		while(currentBlock.NextBlock != null)
+		{
+
+			expBoard += currentBlock.getChar();
+
+			currentBlock = currentBlock.NextBlock;
+
+		}
 
 
         for (int x = 0; x < _width; x++)
@@ -74,7 +83,7 @@ public class BoardController
     //weet niet zeker of dit public of private moet worden
     public void generateBoard(int Width, int Height)
     {
-        board = new Dictionary<string, global::Track>();
+        board = new Dictionary<string, Block>();
 
         _height = Height;
         _width = Width;
@@ -85,7 +94,7 @@ public class BoardController
         for(int i = 0; i < _width; i++)
         {
 
-            currentBlock = firstBlockWater.next = new Water();
+            currentBlock = firstBlockWater.NextBlock = new Water();
 
         }
 
@@ -96,7 +105,7 @@ public class BoardController
             for (int y = 0; y < _height; y++)
             {
 
-                board.Add(x + "-" + y, new Track());
+                board.Add(x + "-" + y, new EmptyBlock());
 
 
             }
