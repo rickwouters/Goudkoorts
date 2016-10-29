@@ -50,6 +50,12 @@ public class BoardController
         set;
     }
 
+	private Track lastTrack
+	{
+		get;
+		set;
+	}
+
 	public virtual string ShowBoard()
 	{
         String expBoard = "";
@@ -122,11 +128,38 @@ public class BoardController
 
         board["0-0"] = new Rail();
         board["1-1"] = new Rail();
-		board["0-2"] = new Rail();
+		board["0-2"] = new Rail { ContainsMinecart = true };
 
 		board["0-1"] = new Switch((Track)board["1-1"], null, (Track)board["0-0"], (Track)board["0-2"]);
 
+		lastTrack = (Track)board["1-1"];
+
     }
+
+	public Boolean simulateTurn()
+	{
+
+		Track currentTrack = lastTrack;
+
+		while(currentTrack.PreviousTrack != null)
+		{
+
+			if (currentTrack.ContainsMinecart)
+			{
+				if (!currentTrack.moveCart())
+				{
+					return false;
+				}
+
+			}
+
+			currentTrack = currentTrack.PreviousTrack;
+
+		}
+
+		return true;
+
+	}
 
 	public void turnSwitch()
 	{

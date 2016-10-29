@@ -64,7 +64,7 @@ public class GameController
 
         gameView.showBoard(boardController.ShowBoard());
 
-		boardController.turnSwitch();
+		boardController.simulateTurn();
 
 		gameView.showBoard(boardController.ShowBoard());
 	}

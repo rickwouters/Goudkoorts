@@ -30,10 +30,45 @@ public abstract class Track : Block
 		set;
 	}
 
+	public virtual Track PreviousTrack
+	{
+		get;
+		set;
+	}
+
     public override char getChar()
     {
-        return '-';
+        return 't';
     }
+
+	public virtual Boolean moveCart()
+	{
+
+		if (NextTrack.ContainsMinecart)
+		{
+			return false;
+		}
+		
+		if(NextTrack is Switch)
+		{
+
+			Switch nextSwitch = (Switch)NextTrack;
+
+			if(nextSwitch.PreviousTrack != this)
+			{
+				Console.WriteLine("switsh stands wrong");
+				return false;
+			}
+
+		}
+
+		NextTrack.ContainsMinecart = true;
+		ContainsMinecart = false;
+
+		return true;
+
+
+	}
 
 }
 

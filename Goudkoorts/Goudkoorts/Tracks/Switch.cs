@@ -36,12 +36,6 @@ public class Switch : Track
 		set;
 	}
 
-	public virtual Track PreviousTrack
-	{
-		get;
-		set;
-	}
-
 	public Switch(Track primaryNext, Track secondaryNext, Track primaryPrevious, Track secondaryPrevious)
 	{
 
