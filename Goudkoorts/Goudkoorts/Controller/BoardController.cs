@@ -179,6 +179,82 @@ public class BoardController
 
 		board["11-1"] = currentTrack;
 
+		currentTrack = PreviousTrack;
+		PreviousTrack = new Rail();
+
+		currentTrack.PreviousTrack = PreviousTrack;
+		PreviousTrack.NextTrack = currentTrack;
+
+		board["11-2"] = currentTrack;
+
+		currentTrack = PreviousTrack;
+		PreviousTrack = new Rail();
+
+		currentTrack.PreviousTrack = PreviousTrack;
+		PreviousTrack.NextTrack = currentTrack;
+
+		board["11-3"] = currentTrack;
+
+		currentTrack = PreviousTrack;
+		PreviousTrack = new Rail();
+
+		currentTrack.PreviousTrack = PreviousTrack;
+		PreviousTrack.NextTrack = currentTrack;
+
+		board["10-3"] = currentTrack;
+
+		Rail primaryPrev = new Rail();
+		Rail SecondaryPrev = new Rail();
+
+		Switch newSwitch = new Switch(currentTrack, null, primaryPrev, SecondaryPrev);
+
+		currentTrack.PreviousTrack = newSwitch;
+
+		primaryPrev.NextTrack = newSwitch;
+		SecondaryPrev.NextTrack = newSwitch;
+
+		board["9-3"] = newSwitch;
+
+		currentTrack = SecondaryPrev;
+		PreviousTrack = new Rail();
+
+		currentTrack.PreviousTrack = PreviousTrack;
+		PreviousTrack.NextTrack = currentTrack;
+
+		board["9-2"] = currentTrack;
+
+		currentTrack = PreviousTrack;
+		PreviousTrack = new Rail();
+
+		currentTrack.PreviousTrack = PreviousTrack;
+		PreviousTrack.NextTrack = currentTrack;
+
+		board["8-2"] = currentTrack;
+
+		currentTrack = PreviousTrack;
+		PreviousTrack = new Rail();
+
+		currentTrack.PreviousTrack = PreviousTrack;
+		PreviousTrack.NextTrack = currentTrack;
+
+		board["7-2"] = currentTrack;
+
+		currentTrack = PreviousTrack;
+		PreviousTrack = new Rail();
+
+		currentTrack.PreviousTrack = PreviousTrack;
+		PreviousTrack.NextTrack = currentTrack;
+
+		board["6-2"] = currentTrack;
+
+		currentTrack = PreviousTrack;
+		PreviousTrack = new Rail();
+
+		currentTrack.PreviousTrack = PreviousTrack;
+		PreviousTrack.NextTrack = currentTrack;
+
+		board["5-2"] = currentTrack;
+
 	}
 
     public void buildBoard1()
