@@ -143,7 +143,7 @@ public class BoardController
 		for(int i = 0; i < 12; i++)
 		{
 
-			Rail rail = new Rail();
+			Embarkment rail = new Embarkment();
 
 			board[i + "-0"] = rail;
 			Debug.WriteLine(i + "-0");
@@ -158,7 +158,7 @@ public class BoardController
 		for(int i = 10; i > -1; i--)
 		{
 
-			Rail rail = (Rail)board[i + "-0"];
+			Track rail = (Track)board[i + "-0"];
 
 			rail.PreviousTrack = (Track)board[(i + 1) + "-0"];
 
