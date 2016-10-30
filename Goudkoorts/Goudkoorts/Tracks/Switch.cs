@@ -6,6 +6,7 @@
 //------------------------------------------------------------------------------
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 
@@ -103,7 +104,7 @@ public class Switch : Track
 			return '/';
 		}
 
-		if(PrimaryNext == NextTrack)
+		if(SecondaryNext == NextTrack)
 		{
 			return '/';
 		}
