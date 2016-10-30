@@ -10,7 +10,7 @@ namespace Goudkoorts.Tracks
     {
         public override char getChar()
         {
-            return '=';
+            return '+';
         }
     }
 }

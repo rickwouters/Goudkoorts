@@ -21,12 +21,6 @@ public class BoardController
     private int _height;
     private Water firstBlockWater;
 
-	public virtual IEnumerable<Track> Track
-	{
-		get;
-		set;
-	}
-
 	public virtual IEnumerable<Minecart> Minecart
 	{
 		get;
@@ -60,6 +54,7 @@ public class BoardController
 	private List<Minecart> carts;
     private List<Ship> ships;
 	private List<Switch> switches;
+	private List<Silo> silos;
 
     public BoardController()
     {
@@ -129,6 +124,7 @@ public class BoardController
 		switches = new List<Switch>();
 		carts = new List<global::Minecart>();
         ships = new List<global::Ship>();
+		silos = new List<Silo>();
 		buildBoard();
     }
 
@@ -208,6 +204,8 @@ public class BoardController
 
 		Switch newSwitch = new Switch(currentTrack, null, primaryPrev, SecondaryPrev);
 
+		switches.Add(newSwitch);
+
 		currentTrack.PreviousTrack = newSwitch;
 
 		primaryPrev.NextTrack = newSwitch;
@@ -254,6 +252,70 @@ public class BoardController
 		PreviousTrack.NextTrack = currentTrack;
 
 		board["5-2"] = currentTrack;
+
+		Track primaryNext = currentTrack;
+		Track secondaryNext = new Rail();
+
+		PreviousTrack = new Rail();
+
+		newSwitch = new Switch(primaryNext, secondaryNext, PreviousTrack, null);
+
+		switches.Add(newSwitch);
+
+		primaryNext.PreviousTrack = newSwitch;
+		secondaryNext.PreviousTrack = newSwitch;
+
+		PreviousTrack.NextTrack = newSwitch;
+
+		board["5-3"] = newSwitch;
+
+		currentTrack = PreviousTrack;
+
+		board["4-3"] = currentTrack;
+
+		primaryPrev = new Rail();
+		SecondaryPrev = new Rail();
+
+		newSwitch = new Switch(currentTrack, null, primaryPrev, SecondaryPrev);
+
+		switches.Add(newSwitch);
+
+		currentTrack.PreviousTrack = newSwitch;
+
+		primaryPrev.NextTrack = newSwitch;
+		SecondaryPrev.NextTrack = newSwitch;
+
+		board["3-3"] = newSwitch;
+
+		currentTrack = SecondaryPrev;
+		PreviousTrack = new Rail();
+
+		currentTrack.PreviousTrack = PreviousTrack;
+		PreviousTrack.NextTrack = currentTrack;
+
+		board["3-2"] = currentTrack;
+
+		currentTrack = PreviousTrack;
+		PreviousTrack = new Rail();
+
+		currentTrack.PreviousTrack = PreviousTrack;
+		PreviousTrack.NextTrack = currentTrack;
+
+		board["2-2"] = currentTrack;
+
+		currentTrack = PreviousTrack;
+		PreviousTrack = new Rail();
+
+		currentTrack.PreviousTrack = PreviousTrack;
+		PreviousTrack.NextTrack = currentTrack;
+
+		board["1-2"] = currentTrack;
+
+		Silo silo = new Silo { NextTrack = currentTrack };
+
+		silos.Add(silo);
+
+		board["0-2"] = silo;
 
 	}
 
