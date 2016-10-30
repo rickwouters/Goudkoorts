@@ -11,6 +11,10 @@ namespace Goudkoorts
 		static void Main(string[] args)
 		{
             new GameController().play();
+<<<<<<< HEAD
+=======
+            Console.ReadLine();
+>>>>>>> master
 		}
 	}
 }

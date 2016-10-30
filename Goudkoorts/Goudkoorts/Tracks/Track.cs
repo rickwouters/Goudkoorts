@@ -4,13 +4,20 @@
 //     Changes to this file will be lost if the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
+using Goudkoorts.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public class Track
+// Deze class moet abstract worden
+public abstract class Track : Block
 {
+    public Track()
+    {
+        ContainsMinecart = false;
+    }
+
 	public virtual bool ContainsMinecart
 	{
 		get;
@@ -21,6 +28,27 @@ public class Track
 	{
 		get;
 		set;
+
+	}
+
+	public virtual Track PreviousTrack
+	{
+		get;
+		set;
+	}
+
+	public override Block NextBlock
+	{
+		get
+		{
+			return NextTrack;
+		}
+
+		set
+		{
+			NextTrack = (Track)value;
+		}
+
 	}
 
 }

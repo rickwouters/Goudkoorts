@@ -8,6 +8,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Goudkoorts.Model;
 
 public class Ship
 {
@@ -17,16 +18,32 @@ public class Ship
 		set;
 	}
 
-	public virtual Shiproute Shiproute
-	{
-		get;
-		set;
-	}
+    public Water location
+    {
+        get;
+        set;
+    }
+
+    public virtual bool full
+    {
+        get { return (!(AmountGold < 8)); }
+    }
+
+    public Ship(Water location)
+    {
+        this.location = location;
+    }
 
 	public virtual void Move()
 	{
-		throw new System.NotImplementedException();
+        location.hasShip = false;
+        location.NextBlock.hasShip = true;
 	}
+
+    public void Fill()
+    {
+        AmountGold++;
+    }
 
 }
 

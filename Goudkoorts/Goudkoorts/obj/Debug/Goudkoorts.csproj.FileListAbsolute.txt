@@ -2,6 +2,14 @@ C:\Users\Rick\Desktop\AAA huiswerk\MODELLEREN\Goudkoorts\Goudkoorts\Goudkoorts\b
 \\tsclient\(VMFR)Goudkoorts\Goudkoorts\bin\Debug\Goudkoorts.exe.config
 \\tsclient\(VMFR)Goudkoorts (1)\Goudkoorts\bin\Debug\Goudkoorts.exe.config
 C:\Users\Rick\Desktop\AAA huiswerk\MODELLEREN\Sourcetree\Goudkoorts\Goudkoorts\bin\Debug\Goudkoorts.exe.config
+<<<<<<< HEAD
+=======
+C:\Users\Rick\Desktop\AAA huiswerk\MODELLEREN\Sourcetree\Goudkoorts\Goudkoorts\bin\Debug\Goudkoorts.exe
+C:\Users\Rick\Desktop\AAA huiswerk\MODELLEREN\Sourcetree\Goudkoorts\Goudkoorts\bin\Debug\Goudkoorts.pdb
+C:\Users\Rick\Desktop\AAA huiswerk\MODELLEREN\Sourcetree\Goudkoorts\Goudkoorts\obj\Debug\Goudkoorts.csprojResolveAssemblyReference.cache
+C:\Users\Rick\Desktop\AAA huiswerk\MODELLEREN\Sourcetree\Goudkoorts\Goudkoorts\obj\Debug\Goudkoorts.exe
+C:\Users\Rick\Desktop\AAA huiswerk\MODELLEREN\Sourcetree\Goudkoorts\Goudkoorts\obj\Debug\Goudkoorts.pdb
+>>>>>>> master
 C:\Users\Chris\Documents\Avans Hogeschool\Jaar 2\Blok 1\Moduleren 3\Eindopdracht\Goudkoorts\Goudkoorts\bin\Debug\Goudkoorts.exe.config
 C:\Users\Chris\Documents\Avans Hogeschool\Jaar 2\Blok 1\Moduleren 3\Eindopdracht\Goudkoorts\Goudkoorts\bin\Debug\Goudkoorts.exe
 C:\Users\Chris\Documents\Avans Hogeschool\Jaar 2\Blok 1\Moduleren 3\Eindopdracht\Goudkoorts\Goudkoorts\bin\Debug\Goudkoorts.pdb

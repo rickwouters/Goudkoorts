@@ -11,5 +11,9 @@ using System.Text;
 
 public class Yard : Track
 {
+    public override char getChar()
+    {
+        return '=';
+    }
 }
 

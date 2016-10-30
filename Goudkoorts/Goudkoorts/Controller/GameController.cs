@@ -8,15 +8,37 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Timers;
 
 public class GameController
 {
+<<<<<<< HEAD
     public GameController()
     {
         GameView = new GameView();
         GameModel = new GameModel();
         BoardController = new BoardController();
         InputView = new InputView();
+=======
+
+    public BoardController boardController;
+    public GameView gameView;
+    private int startingInterval;
+    private Timer timer;
+    private Boolean gameOver;
+
+    public GameController()
+    {
+        boardController = new BoardController();
+        gameView = new GameView();
+
+        startingInterval = 2000;
+        timer = new Timer();
+        timer.Elapsed += new ElapsedEventHandler(OnTimedEvent);
+        timer.Interval = startingInterval;
+
+        gameOver = false;
+>>>>>>> master
     }
 
 	public virtual int Turns
@@ -49,20 +71,75 @@ public class GameController
 		set;
 	}
 
-	public virtual InputView InputView
-	{
-		get;
-		set;
-	}
+    public void play()
+    {
+        gameOver = false;
 
+        gameView.showWelcome();
+        boardController.generateBoard(10, 5);
+
+        gameView.showBoard(boardController.getBoard(), boardController.score);
+
+        timer.Start();
+
+        while (!gameOver)
+        {
+            var input = gameView.getInput();
+            if (input == 's')
+            {
+                endGame();
+            }
+            else
+            {
+                boardController.turnSwitch(input);
+                gameView.showBoard(boardController.getBoard(), boardController.score);
+            }
+        }
+    }
+
+    private void OnTimedEvent(object source, ElapsedEventArgs e)
+    {
+        if (!boardController.simulateTurn())
+        {
+            gameView.showCrash();
+            endGame();
+        }
+        gameView.showBoard(boardController.getBoard(), boardController.score);
+        Turns++;
+        timer.Interval = (startingInterval - Turns * 10) + 500;
+    }
+    
+	
+
+<<<<<<< HEAD
     public void play()
     {
         GameView.printHeader();
     }
 
 	public virtual void SimulateTurn()
+=======
+    private void endGame()
+    {
+        timer.Stop();
+        gameOver = true;
+        if (gameView.GameOver())
+        {
+            restart();
+        }
+        else
+        {
+            gameView.showExit();
+            System.Environment.Exit(1);
+        }
+    }
+    
+    private void restart()
+>>>>>>> master
 	{
-		throw new System.NotImplementedException();
+        timer.Interval = startingInterval;
+		boardController = new BoardController();
+        play();
 	}
 
 }

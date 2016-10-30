@@ -11,6 +11,13 @@ using System.Text;
 
 public class Minecart
 {
+    public Minecart(Track location)
+	{
+		Location = location;
+		Location.ContainsMinecart = true;
+        Filled = true;
+	}
+
 	public virtual Track Location
 	{
 		get;
@@ -20,13 +27,32 @@ public class Minecart
 	public virtual bool Filled
 	{
 		get;
-		set;
+		private set;
 	}
 
-	public virtual void Move()
+	public virtual Boolean Move()
 	{
-		throw new System.NotImplementedException();
+        if (Location.NextTrack == null)
+        {
+            return true;
+        }
+
+        Location.ContainsMinecart = false;
+        Location = Location.NextTrack;
+
+        if (Location.ContainsMinecart == true)
+        {
+            return false;
+        }
+        
+        Location.NextTrack.ContainsMinecart = true;
+        return true;
 	}
+
+    public void empty()
+    {
+        Filled = false;
+    }
 
 }
 
