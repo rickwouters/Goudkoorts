@@ -95,6 +95,11 @@ public class GameController
             gameView.showCrash();
             endGame();
         }
+
+        if (Turns % 5 == 0)
+        {
+            boardController.spawnMinecarts();
+        }
         gameView.showBoard(boardController.getBoard(), boardController.score);
         Turns++;
         timer.Interval = (startingInterval - Turns * 10) + 500;

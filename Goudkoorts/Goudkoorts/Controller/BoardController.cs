@@ -557,5 +557,13 @@ public class BoardController
         }		
 	}
 
+    public void spawnMinecarts()
+    {
+        foreach (var silo in silos)
+        {
+            silo.spawnCart();
+        }
+    }
+
 }
 
