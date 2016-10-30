@@ -76,7 +76,6 @@ public class GameController
 
         while (!gameOver)
         {
-			Debug.WriteLine("hello");
             var input = gameView.getInput();
             if (input == 's')
             {
@@ -88,7 +87,6 @@ public class GameController
                 gameView.showBoard(boardController.getBoard(), boardController.score);
             }
         }
-		Debug.WriteLine("bye");
     }
 
     private void OnTimedEvent(object source, ElapsedEventArgs e)
@@ -99,7 +97,7 @@ public class GameController
             endGame();
         }
 
-        if (Turns % 5 == 0)
+        if (Turns % 10 == 0)
         {
             boardController.spawnMinecarts();
         }

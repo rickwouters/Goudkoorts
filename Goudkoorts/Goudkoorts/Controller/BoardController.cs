@@ -528,7 +528,6 @@ public class BoardController
 
     public Boolean simulateTurn()
     {
-
         foreach (Minecart e in carts)
         {
             if (!e.Move())
@@ -561,7 +560,7 @@ public class BoardController
     {
         foreach (var silo in silos)
         {
-            silo.spawnCart();
+            carts.Add(silo.spawnCart());
         }
     }
 

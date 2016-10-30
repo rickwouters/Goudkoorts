@@ -45,7 +45,7 @@ public class Minecart
             return false;
         }
         
-        Location.NextTrack.ContainsMinecart = true;
+        Location.ContainsMinecart = true;
         return true;
 	}
 
