@@ -6,6 +6,7 @@
 //------------------------------------------------------------------------------
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Timers;
@@ -75,6 +76,7 @@ public class GameController
 
         while (!gameOver)
         {
+			Debug.WriteLine("hello");
             var input = gameView.getInput();
             if (input == 's')
             {
@@ -86,6 +88,7 @@ public class GameController
                 gameView.showBoard(boardController.getBoard(), boardController.score);
             }
         }
+		Debug.WriteLine("bye");
     }
 
     private void OnTimedEvent(object source, ElapsedEventArgs e)
