@@ -56,45 +56,39 @@ public class Switch : Track
 
 		NextTrack = PrimaryNext;
 		PreviousTrack = PrimaryPrevious;
-
 	}
 
-	public void changeDirection()
-	{
+    public void changeDirection()
+    {
 
-		if (!ContainsMinecart)
-		{
+        if (!ContainsMinecart)
+        {
+            if (SecondaryNext != null)
+            {
+                if (PrimaryNext == NextTrack)
+                {
+                    NextTrack = SecondaryNext;
+                }
+                else
+                {
+                    NextTrack = PrimaryNext;
+                }
+            }
 
-			if(SecondaryNext != null)
-			{
-				if(PrimaryNext == NextTrack)
-				{
-					NextTrack = SecondaryNext;
-				}
-				else
-				{
-					NextTrack = PrimaryNext;
-				}
+            if (SecondaryPrevious != null)
+            {
+                if (PrimaryPrevious == PreviousTrack)
+                {
+                    PreviousTrack = SecondaryPrevious;
+                }
+                else
+                {
+                    PreviousTrack = PrimaryPrevious;
+                }
+            }
+        }
 
-			}
-
-			if (SecondaryPrevious != null)
-			{
-
-				if(PrimaryPrevious == PreviousTrack)
-				{
-					PreviousTrack = SecondaryPrevious;
-				}
-				else
-				{
-					PreviousTrack = PrimaryPrevious;
-				}
-
-			}
-
-		}
-
-	}
+    }
 
 	public override char getChar()
 	{

@@ -8,5 +8,16 @@ namespace Goudkoorts.Tracks
 {
     class Silo : Track
     {
+        public override char getChar()
+        {
+            return 'X';
+        }
+
+        public Minecart spawnCart()
+        {
+            Minecart cart = new Minecart(this);
+            cart.Move();
+            return cart;
+        }
     }
 }

@@ -8,5 +8,9 @@ namespace Goudkoorts.Tracks
 {
     class Embarkment : Track
     {
+        public override char getChar()
+        {
+            return '=';
+        }
     }
 }

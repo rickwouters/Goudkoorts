@@ -6,19 +6,17 @@ using System.Threading.Tasks;
 
 namespace Goudkoorts.Model
 {
-    class Water : Block
+    public class Water : Block
     {
-
-        private char output = '~';
-
 		public new Water NextBlock { get; set; }
 
-		public new char getChar()
-		{
+        public Boolean hasShip { get; set; }
 
-			return output;
-
-		}
-
+        public override char getChar()
+        {
+            if (hasShip)
+                return ']';
+            return '~';
+        }
 	}
 }

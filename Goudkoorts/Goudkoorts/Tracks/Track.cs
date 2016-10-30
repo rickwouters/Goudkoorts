@@ -37,11 +37,6 @@ public abstract class Track : Block
 		set;
 	}
 
-    public override char getChar()
-    {
-        return 't';
-    }
-
 	public override Block NextBlock
 	{
 		get
@@ -53,35 +48,6 @@ public abstract class Track : Block
 		{
 			NextTrack = (Track)value;
 		}
-
-	}
-
-	public virtual Boolean moveCart()
-	{
-
-		if (NextTrack.ContainsMinecart)
-		{
-			return false;
-		}
-		
-		if(NextTrack is Switch)
-		{
-
-			Switch nextSwitch = (Switch)NextTrack;
-
-			if(nextSwitch.PreviousTrack != this)
-			{
-				Console.WriteLine("switsh stands wrong");
-				return false;
-			}
-
-		}
-
-		NextTrack.ContainsMinecart = true;
-		ContainsMinecart = false;
-
-		return true;
-
 
 	}
 

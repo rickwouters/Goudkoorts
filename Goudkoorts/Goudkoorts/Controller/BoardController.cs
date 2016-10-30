@@ -20,12 +20,6 @@ public class BoardController
     private int _height;
     private Water firstBlockWater;
 
-    public virtual Track SpawnLocations
-	{
-		get;
-		set;
-	}
-
 	public virtual IEnumerable<Track> Track
 	{
 		get;
@@ -56,10 +50,22 @@ public class BoardController
 		set;
 	}
 
+    public int score
+    {
+        get;
+        set;
+    }
+
 	private List<Minecart> carts;
+    private List<Ship> ships;
 	private List<Switch> switches;
 
-	public virtual string ShowBoard()
+    public BoardController()
+    {
+        score = 0;
+    }
+
+	public virtual string getBoard()
 	{
         String expBoard = "";
 
@@ -113,9 +119,7 @@ public class BoardController
 
             for (int y = 0; y < _height; y++)
             {
-
                 board.Add(x + "-" + y, new EmptyBlock());
-
 
             }
 
@@ -123,12 +127,12 @@ public class BoardController
 
 		switches = new List<Switch>();
 		carts = new List<global::Minecart>();
+        ships = new List<global::Ship>();
 		buildBoard1();
     }
 
 	public void buildBoard()
 	{
-
 		board["0-0"] = new Rail();
 		board["0-1"] = new Rail();
 		board["0-2"] = new Rail();
@@ -146,7 +150,7 @@ public class BoardController
     public void buildBoard1()
     {
 
-        // dit moet handmatig, hieronder staat een vvorbeeld voor hoe het moet
+        // dit moet handmatig, hieronder staat een voorbeeld voor hoe het moet
 
         board["0-0"] = new Rail();
         board["1-1"] = new Rail();
@@ -158,28 +162,40 @@ public class BoardController
 
 
 
-		carts.Add(new Minecart((Track)board["0-2"]));
+        carts.Add(new Minecart((Track)board["0-2"]));
+        ships.Add(new Ship(firstBlockWater));
+        firstBlockWater.hasShip = true;
     }
 
-	public Boolean simulateTurn()
+    public Boolean simulateTurn()
+    {
+
+        foreach (Minecart e in carts)
+        {
+            if (!e.Move())
+            {
+                return false;
+            }
+        }
+
+        foreach (Ship e in ships)
+        {
+            e.Move();
+        }
+
+        return true;
+    }
+
+	public void turnSwitch(char switchChar)
 	{
+        int switchNumber = 0;
 
-		foreach(Minecart e in carts){
-
-			if (!e.Move())
-			{
-				return false;
-			}
-
-		}
-
-		return true;
-
-	}
-
-	public void turnSwitch(int index)
-	{
-		switches[index].changeDirection();
+        int.TryParse(switchChar.ToString(), out switchNumber);
+        int index = switchNumber - 1;
+        if (index >= 0 && index < switches.Count)
+        {
+            switches[index].changeDirection();
+        }		
 	}
 
 }

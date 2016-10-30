@@ -11,7 +11,7 @@ using System.Text;
 
 public class GameView
 {
-    public void showWelcome()
+    public void printHeader()
     {
         Console.WriteLine("           ███████   ███████  ██     ██ ████████");
         Console.WriteLine("          ██        ██     ██ ██     ██ ██     ██");
@@ -25,15 +25,21 @@ public class GameView
         Console.WriteLine("██   ██   ██     ██ ██     ██ ██     ██    ███          ███");
         Console.WriteLine("██    ███  ███████   ███████  ██     ██    ███     ███████");
         Console.WriteLine("-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-");
+    }
+
+    public void showWelcome()
+    {
+        printHeader();
+        
         Console.WriteLine("███████████████████████ W E L K O M ███████████████████████");
         Console.WriteLine("█████                                                 █████");
         Console.WriteLine("█████ Welkom bij goudkoorts! Het doel van dit spel    █████");
         Console.WriteLine("█████ is om zo veel mogelijk mijnkarretjes met goud   █████");
         Console.WriteLine("█████ naar de boot te brengen. Jij moet de wissels    █████");
         Console.WriteLine("█████ omzetten zodat de karretjes niet botsen, maar   █████");
-        Console.WriteLine("█████ kijk uit! De karretjes komen steeds sneller!    █████");
+        Console.WriteLine("█████ kijk uit! De karretjes gaan steeds sneller!     █████");
         Console.WriteLine("█████                                                 █████");
-        Console.WriteLine("█████ Gebruik de toetsen 1-5 om de wissels om te      █████");
+        Console.WriteLine("█████ Gebruik de nummer toetsen om de wissels om te   █████");
         Console.WriteLine("█████ zetten.                                         █████");
         Console.WriteLine("█████                                                 █████");
         Console.WriteLine("██████████████████████ L E G E N D A ██████████████████████");
@@ -42,30 +48,79 @@ public class GameView
         Console.WriteLine("█████    -   - Rails             =   - Rangeervak     █████");
         Console.WriteLine("█████    /   - Wissel noord      \\   - Wissel zuid    █████");
         Console.WriteLine("█████    ~   - Water             +   - Kade           █████");
-        Console.WriteLine("█████    <0> - Volle boot        <o> - Lege boot      █████");
+        Console.WriteLine("█████    }   - Volle boot        ]   - Lege boot      █████");
+        Console.WriteLine("█████    X   - Silo                                   █████");
         Console.WriteLine("█████                                                 █████");
         Console.WriteLine("███████████████████████████████████████████████████████████");
+        Console.WriteLine("");
+        Console.WriteLine("> Druk op een toets om het spel te beginnen");
+        
+        Console.ReadKey();
     }
 
-    public void showBoard(String board)
+    public void showBoard(String board, int score)
     {
+        Console.Clear();
+
+        printHeader();
+
+        Console.WriteLine("Score: {0}", score);
+        Console.WriteLine();
         Console.WriteLine(board);
     }
 
 	public Boolean GameOver()
 	{
-		Console.WriteLine("Game over");
-		Console.WriteLine("Try again (yes/no)");
+		Console.WriteLine("> Nog een keer spelen? (y/n)");
 
-		if (Console.ReadLine().Equals("yes"))
-		{
-			return true;
-		}
+        var input = Console.ReadKey().KeyChar;
+        Console.WriteLine("");
 
-		Console.WriteLine("okay bye");
-		return false;
-
+        while (input != 'y' && input != 'n')
+        {
+            Console.WriteLine("> ?");
+            input = Console.ReadKey().KeyChar;
+            Console.WriteLine("");
+        }
+        if (input == 'y')
+        {
+            return true;
+        }
+        return false;
 	}
+
+    public void showCrash()
+    {
+        Console.WriteLine("> Helaas, je bent gebotst!");
+    }
+
+    public void showExit()
+    {
+        Console.Clear();
+
+        printHeader();
+
+        Console.WriteLine("> Bedankt voor het spelen!");
+        Console.WriteLine("> Druk op een toets om de applicatie af te sluiten");
+        Console.ReadKey();
+    }
+
+    public char getInput()
+    {
+        var input = Console.ReadKey().KeyChar;
+        Console.WriteLine("");
+        return input;
+    }
+
+    public int getSwitchNumber()
+    {
+        char input = Console.ReadKey().KeyChar;
+        int switchNumber = 0;
+
+        int.TryParse(input.ToString(), out switchNumber);
+
+        return switchNumber;
+    }
 
 }
 
