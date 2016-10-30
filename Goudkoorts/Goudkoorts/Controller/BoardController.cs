@@ -8,6 +8,7 @@ using Goudkoorts.Model;
 using Goudkoorts.Tracks;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 
@@ -128,22 +129,55 @@ public class BoardController
 		switches = new List<Switch>();
 		carts = new List<global::Minecart>();
         ships = new List<global::Ship>();
-		buildBoard1();
+		buildBoard();
     }
 
 	public void buildBoard()
 	{
-		board["0-0"] = new Rail();
-		board["0-1"] = new Rail();
-		board["0-2"] = new Rail();
-		board["0-3"] = new Rail();
+		//looks fucked but builds the track
 
-		board["0-0"].NextBlock = board["0-1"];
-		board["0-1"].NextBlock = board["0-2"];
-		board["0-2"].NextBlock = board["0-3"];
+		Track nexttrack;
+		Track currentTrack = new Rail();
+		Track PreviousTrack;
 
-		carts.Add(new Minecart((Track)board["0-1"]));
+		for(int i = 0; i < 12; i++)
+		{
 
+			Rail rail = new Rail();
+
+			board[i + "-0"] = rail;
+			Debug.WriteLine(i + "-0");
+
+			if(i != 0)
+			{
+				rail.NextTrack = (Track)board[(i - 1) + "-0"];
+			}
+
+		}
+
+		for(int i = 10; i > -1; i--)
+		{
+
+			Rail rail = (Rail)board[i + "-0"];
+
+			rail.PreviousTrack = (Track)board[(i + 1) + "-0"];
+
+		}
+		currentTrack = (Track)board["11-0"];
+
+		PreviousTrack = new Rail();
+		PreviousTrack.NextTrack = currentTrack;
+
+		currentTrack.PreviousTrack = PreviousTrack;
+
+		currentTrack = PreviousTrack;		
+
+		PreviousTrack = new Rail();
+
+		currentTrack.PreviousTrack = PreviousTrack;
+		PreviousTrack.NextTrack = currentTrack;
+
+		board["11-1"] = currentTrack;
 
 	}
 

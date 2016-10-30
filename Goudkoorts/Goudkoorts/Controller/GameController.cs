@@ -67,7 +67,7 @@ public class GameController
         gameOver = false;
 
         gameView.showWelcome();
-        boardController.generateBoard(10, 5);
+        boardController.generateBoard(12, 8);
 
         gameView.showBoard(boardController.getBoard(), boardController.score);
 
