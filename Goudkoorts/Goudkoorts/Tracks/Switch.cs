@@ -52,7 +52,7 @@ public class Switch : Track
 		SecondaryNext = secondaryNext;
 
 		PrimaryPrevious = primaryPrevious;
-		SecondaryNext = secondaryPrevious;
+		SecondaryPrevious = secondaryPrevious;
 
 		NextTrack = PrimaryNext;
 		PreviousTrack = PrimaryPrevious;
@@ -98,7 +98,12 @@ public class Switch : Track
 			return '0';
 		}
 
-		if(SecondaryPrevious == PreviousTrack || PrimaryNext == NextTrack)
+		if(SecondaryPrevious == PreviousTrack)
+		{
+			return '/';
+		}
+
+		if(PrimaryNext == NextTrack)
 		{
 			return '/';
 		}

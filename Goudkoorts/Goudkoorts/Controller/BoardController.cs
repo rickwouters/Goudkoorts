@@ -317,6 +317,193 @@ public class BoardController
 
 		board["0-2"] = silo;
 
+		newSwitch = (Switch)board["3-3"];
+
+		currentTrack = newSwitch.PrimaryPrevious;
+
+		PreviousTrack = new Rail();
+
+		currentTrack.PreviousTrack = PreviousTrack;
+		PreviousTrack.NextTrack = currentTrack;
+
+		board["3-4"] = currentTrack;
+
+		currentTrack = PreviousTrack;
+		PreviousTrack = new Rail();
+
+		currentTrack.PreviousTrack = PreviousTrack;
+		PreviousTrack.NextTrack = currentTrack;
+
+		board["2-4"] = currentTrack;
+
+		currentTrack = PreviousTrack;
+		PreviousTrack = new Rail();
+
+		currentTrack.PreviousTrack = PreviousTrack;
+		PreviousTrack.NextTrack = currentTrack;
+
+		board["1-4"] = currentTrack;
+
+		silo = new Silo { NextTrack = currentTrack };
+
+		silos.Add(silo);
+
+		board["0-4"] = silo;
+
+		newSwitch = (Switch)board["9-3"];
+
+		currentTrack = newSwitch.PrimaryPrevious;
+		PreviousTrack = new Rail();
+
+		currentTrack.PreviousTrack = PreviousTrack;
+		PreviousTrack.NextTrack = currentTrack;
+
+		board["9-4"] = currentTrack;
+
+		currentTrack = PreviousTrack;
+		PreviousTrack = new Rail();
+
+		currentTrack.PreviousTrack = PreviousTrack;
+		PreviousTrack.NextTrack = currentTrack;
+
+		board["8-4"] = currentTrack;
+
+		primaryNext = currentTrack;
+		secondaryNext = new Rail();
+
+		PreviousTrack = new Rail();
+
+		newSwitch = new Switch(primaryNext, secondaryNext, PreviousTrack, null);
+
+		switches.Add(newSwitch);
+
+		primaryNext.PreviousTrack = newSwitch;
+		secondaryNext.PreviousTrack = newSwitch;
+
+		PreviousTrack.NextTrack = newSwitch;
+
+		board["8-5"] = newSwitch;
+
+		currentTrack = PreviousTrack;
+
+		board["7-5"] = currentTrack;
+
+		newSwitch = new Switch(currentTrack, null, primaryPrev, SecondaryPrev);
+
+		switches.Add(newSwitch);
+
+		currentTrack.PreviousTrack = newSwitch;
+
+		primaryPrev.NextTrack = newSwitch;
+		SecondaryPrev.NextTrack = newSwitch;
+
+		board["6-5"] = newSwitch;
+
+		currentTrack = SecondaryPrev;
+
+		newSwitch = (Switch)board["3-3"];
+
+		PreviousTrack = newSwitch.SecondaryPrevious;
+
+		currentTrack.PreviousTrack = PreviousTrack;
+		PreviousTrack.NextTrack = currentTrack;
+
+		board["6-4"] = currentTrack;
+
+		board["5-4"] = PreviousTrack;
+
+		newSwitch = (Switch)board["6-5"];
+
+		currentTrack = newSwitch.PrimaryPrevious;
+		PreviousTrack = new Rail();
+
+		currentTrack.PreviousTrack = PreviousTrack;
+		PreviousTrack.NextTrack = currentTrack;
+
+		board["6-6"] = currentTrack;
+
+		for(int i = 5; i > 0; i--)
+		{
+
+			currentTrack = PreviousTrack;
+			PreviousTrack = new Rail();
+
+			currentTrack.PreviousTrack = PreviousTrack;
+			PreviousTrack.NextTrack = currentTrack;
+
+			board[i + "-6"] = currentTrack;
+
+		}
+
+		silo = new Silo { NextTrack = currentTrack };
+
+		silos.Add(silo);
+
+		board["0-6"] = silo;
+
+		newSwitch = (Switch)board["8-5"];
+
+		currentTrack = newSwitch.SecondaryNext;
+		nexttrack = new Rail();
+
+		currentTrack.NextTrack = nexttrack;
+		nexttrack.PreviousTrack = currentTrack;
+
+		board["8-6"] = currentTrack;
+
+		currentTrack = nexttrack;
+		nexttrack = new Rail();
+
+		currentTrack.NextTrack = nexttrack;
+		nexttrack.PreviousTrack = currentTrack;
+
+		board["9-6"] = currentTrack;
+
+		currentTrack = nexttrack;
+		nexttrack = new Rail();
+
+		currentTrack.NextTrack = nexttrack;
+		nexttrack.PreviousTrack = currentTrack;
+
+		board["10-6"] = currentTrack;
+
+		currentTrack = nexttrack;
+		nexttrack = new Rail();
+
+		currentTrack.NextTrack = nexttrack;
+		nexttrack.PreviousTrack = currentTrack;
+
+		board["11-6"] = currentTrack;
+
+		currentTrack = nexttrack;
+		nexttrack = new Rail();
+
+		currentTrack.NextTrack = nexttrack;
+		nexttrack.PreviousTrack = currentTrack;
+
+		board["11-7"] = currentTrack;
+
+		currentTrack = nexttrack;
+		nexttrack = new Rail();
+
+		currentTrack.NextTrack = nexttrack;
+		nexttrack.PreviousTrack = currentTrack;
+
+		board["10-7"] = currentTrack;
+		
+		for (int i = 9; i > 0; i--)
+		{
+
+			currentTrack = nexttrack;
+			nexttrack = new Yard();
+
+			currentTrack.NextTrack = nexttrack;
+			nexttrack.PreviousTrack = currentTrack;
+
+			board[i + "-7"] = currentTrack;
+
+		}
+
 	}
 
     public void buildBoard1()
